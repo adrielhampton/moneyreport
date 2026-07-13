@@ -231,20 +231,32 @@ ol.ranked{list-style:none;counter-reset:rk 4;padding:0;margin:26px 0}
 
 .tablenote{font-size:13px;color:var(--grey);font-style:italic;margin:10px 0 0}
 
-/* ---- print pagination: strategic breaks ---- */
+/* ---- print pagination v2: chapters break, content flows ---- */
 @media print{
-  /* never orphan a heading at the bottom of a page */
   h2,h3,h4{break-after:avoid;page-break-after:avoid}
-  /* each major section starts on a fresh page (intro + takeaways share page 1) */
+  /* major chapters on fresh pages — but page 1 = title + intro + takeaways */
   section.block{break-before:page;page-break-before:always}
-  section.block#key-takeaways{break-before:auto;page-break-before:auto}
-  /* no stranded single lines */
+  section.block#introduction,section.block#key-takeaways{break-before:auto;page-break-before:auto}
+  /* each race gets its own page; the first race of each chamber stays with its chapter intro */
+  #ad68,#ad35,#ad12,#ad65,#sd24,#sd26,#sd40,#cd22,#cd23,#cd48{break-before:page;page-break-before:always}
+  /* appendix races flow naturally (short sections; own pages would waste paper) */
+  #appendix-3 h3{break-before:auto;page-break-before:auto}
   p,li{orphans:3;widows:3}
-  /* keep figures, tables, cards whole */
-  figure,.tablewrap,table,.bcard,.rrow,.totalstrip{break-inside:avoid;page-break-inside:avoid}
-  /* footnotes begin on their own page */
+  /* figures and cards stay whole; TABLES FLOW with repeating headers and unbreakable rows */
+  figure,.bcard,.rrow,.totalstrip{break-inside:avoid;page-break-inside:avoid}
+  .tablewrap,table{break-inside:auto;page-break-inside:auto}
+  thead{display:table-header-group}
+  tr{break-inside:avoid;page-break-inside:avoid}
+  /* dark header row is invisible when browsers skip backgrounds — force print-safe styling */
+  th{background:#fff!important;color:#000!important;border-bottom:2.5pt solid #000;font-weight:700}
+  table{border-top:1pt solid #000}
+  tbody tr:nth-child(even){background:#fff}
+  td{border-top:0.5pt solid #999}
   #footnotes{break-before:page;page-break-before:always}
+  .printurl{display:block}
 }
+.printurl{display:none;text-align:center;font-family:var(--mono);font-size:12pt;
+  margin-top:24pt;padding-top:12pt;border-top:2pt solid #000;color:#000}
 
 @media print{
   section#methodology a[href^="http"]::after{content:" (" attr(href) ")";font-size:85%;color:#444;word-break:break-all}
@@ -255,7 +267,7 @@ ol.ranked{list-style:none;counter-reset:rk 4;padding:0;margin:26px 0}
 </style>
 </head>
 <body>
-<div class="draftbanner">DRAFT PREVIEW r4 &mdash; for review only. Not for distribution.</div>
+<div class="draftbanner">DRAFT PREVIEW r5 &mdash; for review only. Not for distribution.</div>
 <nav class="topnav" aria-label="Report navigation">
  <div class="navinner">
   <a class="navhome" href="https://peopleoverbillionairesca.org">&#8592; PeopleOverBillionairesCA.org</a>
@@ -305,7 +317,7 @@ ol.ranked{list-style:none;counter-reset:rk 4;padding:0;margin:26px 0}
 </section>
 <div class="printbar">
   <button class="printbtn" onclick="window.print()">&#128424;&nbsp; Print / Save as PDF</button>
-  <p class="printtip">This report is print-ready &mdash; your browser&rsquo;s print dialog produces a clean PDF. Standard <strong>portrait / letter</strong> layout is recommended.</p>
+  <p class="printtip">This report is print-ready &mdash; your browser&rsquo;s print dialog produces a clean PDF. Standard <strong>portrait / letter</strong> layout is recommended &mdash; and turn off &ldquo;Headers and footers&rdquo; in the print dialog (Chrome: More settings) for the cleanest copy.</p>
 </div>
 <section class="block" id="the-15"><h2>The 15 Billionaires Seeking to Reshape California</h2>
 <h3 id="top-four">The Top Four, Combined with Corporate Spending</h3>
@@ -407,7 +419,7 @@ ol.ranked{list-style:none;counter-reset:rk 4;padding:0;margin:26px 0}
 <p class="rdesc"><span class="m">$2.2 million</span> in state level contributions, including <span class="m">$2 million</span> to Building a Better California</p>
 </li>
 </ol>
-<p class="totalstrip">The 15 billionaires' individual donations combined: <strong><span class="m">$336 million</span></strong></p>
+<p class="totalstrip">The 15 billionaires&rsquo; individual donations combined: <strong><span class="m">$336 million</span></strong></p>
 </section>
 <section class="block" id="biggest-spenders"><h2>California's Biggest Spenders</h2>
 <p><strong>Sergey Brin</strong>, the co-founder of <strong>Google</strong> who is still on the board of directors and is a controlling shareholder<sup class="fnref"><a id="fnref11" href="#fn11">11</a></sup>, dwarfed every other billionaire in state-level contributions - contributing <strong><span class="m">$86 million</span></strong> to a host of PACs in the state.<sup class="fnref"><a id="fnref12" href="#fn12">12</a></sup> While Brin did not contribute directly to federal candidates in California or any of the major AI federal PACs, he has contributed <span class="m">$443,000</span> this cycle to the Republican National Committee. Brin’s largest contribution in the state was directed towards his Building a Better California committee - <span class="m">$82 million</span> - that is laser focused on defeating the Billionaire Ballot measure through direct opposition and a series of counter-ballot measures to undercut the initiative.</p>
@@ -1671,6 +1683,7 @@ ol.ranked{list-style:none;counter-reset:rk 4;padding:0;margin:26px 0}
 <li id="fn54"><a href="https://workingfamilies.org/2026/01/wfp-endorses-jane-kim-for-california-insurance-commissioner/" target="_blank" rel="noopener">https://workingfamilies.org/2026/01/wfp-endorses-jane-kim-for-california-insurance-commissioner/</a> <a class="fnback" href="#fnref54" aria-label="Back to text">&#8617;</a></li>
 <li id="fn55"><a href="https://calexicochronicle.com/2026/05/14/op-ed-data-centers-and-the-36th-assembly-district/" target="_blank" rel="noopener">https://calexicochronicle.com/2026/05/14/op-ed-data-centers-and-the-36th-assembly-district/</a> <a class="fnback" href="#fnref55" aria-label="Back to text">&#8617;</a></li>
 </ol></section>
+<div class="printurl">Full report: moneyreport.peopleoverbillionairesca.org &nbsp;&middot;&nbsp; A California Common Good report</div>
 </main>
 <footer class="sitefooter">
  <img src="/images/ccg-logo.png" alt="California Common Good" loading="lazy">

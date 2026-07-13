@@ -4,15 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Explosion of Corporate Billionaire Money in California Politics</title>
-<meta name="description" content="Who is spending, where the money flows, and the races it flooded — California's 2026 primary cycle, mapped. A California Common Good report.">
+<meta name="description" content="The 15 individuals working to reshape a state of 40 million. A California Common Good report on corporate billionaire money in the 2026 primary cycle.">
 <meta name="robots" content="noindex, nofollow"><!-- REMOVE AT LAUNCH -->
 <!-- OG tags: set absolute URLs at launch
 <meta property="og:title" content="The Explosion of Corporate Billionaire Money in California Politics">
-<meta property="og:description" content="Who is spending, where the money flows, and the races it flooded.">
+<meta property="og:description" content="The 15 individuals working to reshape a state of 40 million.">
 <meta property="og:url" content="https://moneyreport.peopleoverbillionairesca.org/">
 <meta property="og:image" content="https://moneyreport.peopleoverbillionairesca.org/images/og.png">
 <meta name="twitter:card" content="summary_large_image">
 -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
@@ -230,21 +231,40 @@ ol.ranked{list-style:none;counter-reset:rk 4;padding:0;margin:26px 0}
 
 .tablenote{font-size:13px;color:var(--grey);font-style:italic;margin:10px 0 0}
 
+/* ---- print pagination: strategic breaks ---- */
+@media print{
+  /* never orphan a heading at the bottom of a page */
+  h2,h3,h4{break-after:avoid;page-break-after:avoid}
+  /* each major section starts on a fresh page (intro + takeaways share page 1) */
+  section.block{break-before:page;page-break-before:always}
+  section.block#key-takeaways{break-before:auto;page-break-before:auto}
+  /* no stranded single lines */
+  p,li{orphans:3;widows:3}
+  /* keep figures, tables, cards whole */
+  figure,.tablewrap,table,.bcard,.rrow,.totalstrip{break-inside:avoid;page-break-inside:avoid}
+  /* footnotes begin on their own page */
+  #footnotes{break-before:page;page-break-before:always}
+}
+
+@media print{
+  section#methodology a[href^="http"]::after{content:" (" attr(href) ")";font-size:85%;color:#444;word-break:break-all}
+}
+
 </style>
 </head>
 <body>
-<div class="draftbanner">DRAFT PREVIEW &mdash; for review only. Not for distribution.</div>
+<div class="draftbanner">DRAFT PREVIEW r3 &mdash; for review only. Not for distribution.</div>
 <nav class="topnav" aria-label="Report navigation">
  <div class="navinner">
   <a class="navhome" href="https://peopleoverbillionairesca.org">&#8592; PeopleOverBillionairesCA.org</a>
   <div class="navlinks">
    <a href="#key-takeaways">Takeaways</a>
+   <a href="#methodology">Methodology</a>
+   <a href="#race-index">Races</a>
    <a href="#the-15">The&nbsp;15</a>
    <a href="#pac-web">State&nbsp;PACs</a>
    <a href="#federal-pacs">Federal&nbsp;PACs</a>
-   <a href="#race-index">Races</a>
    <a href="#conclusion">Conclusion</a>
-   <a href="#methodology">Methodology</a>
    <a href="#appendix-1">Appendices</a>
   </div>
  </div>
@@ -252,11 +272,9 @@ ol.ranked{list-style:none;counter-reset:rk 4;padding:0;margin:26px 0}
 <header class="hero">
  <p class="kicker">A California Common Good Report &nbsp;&middot;&nbsp; 2026</p>
  <h1>The Explosion of Corporate Billionaire Money in California Politics</h1>
- <p class="herosub">Who is spending, where the money flows, and the races it flooded &mdash; the 2026 primary cycle, mapped.</p>
+ <p class="herosub">The 15 Individuals Working to Reshape a State of 40 Million</p>
 </header>
 <main>
-<p><em>The 15 Individuals Working to Reshape a State of 40 Million</em></p>
-</section>
 <section class="block" id="introduction"><h2>Introduction</h2>
 <p>In the mere 16 months since Trump’s reelection, the collective wealth of California’s 225 billionaires has grown by <em><span class="m">$570.8 billion</span>, or 36.2%</em>.<sup class="fnref"><a id="fnref1" href="#fn1">1</a></sup> Many of these billionaires are now weaponizing those gains against California’s working families, as shown by a dramatic uptick in their political spending in support of a pro-corporate and big-tech agenda that is often explicitly opposed to consumer protections, worker organization and progressive taxation.</p>
 <p>During this same period, the combination of Trump’s tax cuts for billionaires and unlawful tariffs has saddled 80% of California residents–four out of five people–with an average increase of <a href="https://docs.google.com/spreadsheets/d/17AhQfnz-5A4_h7r9MlpJ1dOns29XFXVnkmv9zyi9wqw/edit?gid=1514411716#gid=1514411716" target="_blank" rel="noopener"><em><span class="m">$880</span> in higher costs</em></a> <em>this year<sup class="fnref"><a id="fnref2" href="#fn2">2</a></sup>.</em></p>
@@ -285,7 +303,7 @@ ol.ranked{list-style:none;counter-reset:rk 4;padding:0;margin:26px 0}
 </section>
 <div class="printbar">
   <button class="printbtn" onclick="window.print()">&#128424;&nbsp; Print / Save as PDF</button>
-  <p class="printtip">This report is print-ready &mdash; your browser&rsquo;s print dialog produces a clean PDF. Choose <strong>landscape</strong> for the best rendering of the money-flow diagrams.</p>
+  <p class="printtip">This report is print-ready &mdash; your browser&rsquo;s print dialog produces a clean PDF. Standard <strong>portrait / letter</strong> layout is recommended.</p>
 </div>
 <section class="block" id="the-15"><h2>The 15 Billionaires Seeking to Reshape California</h2>
 <h3 id="top-four">The Top Four, Combined with Corporate Spending</h3>
@@ -323,7 +341,7 @@ ol.ranked{list-style:none;counter-reset:rk 4;padding:0;margin:26px 0}
 <p class="baff">Ripple <em>(Chairman)</em></p>
 <p class="bmoney"><span class="m">$36,891,827</span></p>
 <p class="bmoney-label">individual contributions, 2026 cycle</p>
-<p class="bdesc">State Total <span class="m">$25.2</span>. million: Grow CA, Golden State Promise, Building a Better CA, Californians for an Affordable Future, CA Business Roundtable &amp; smaller contributions to candidates and PACs; + Federal: <span class="m">$8.7M</span> in contributions to candidates and PACs, including Abundant Future and You can Push Back &amp; San Francisco: <span class="m">$2.9M</span> in contributions</p>
+<p class="bdesc">State Total <span class="m">$25.2 million</span>: Grow CA, Golden State Promise, Building a Better CA, Californians for an Affordable Future, CA Business Roundtable &amp; smaller contributions to candidates and PACs; + Federal: <span class="m">$8.7M</span> in contributions to candidates and PACs, including Abundant Future and You can Push Back &amp; San Francisco: <span class="m">$2.9M</span> in contributions</p>
 <div class="bcorp"><span class="bcorp-label">Plus corporate giving</span><br><strong><em><span class="m">$56,090,200</span> Ripple</em></strong>  <span class="m">$5,990,200</span> - State <span class="m">$49,600,000</span> - Federal <span class="m">$500,000</span> - San Francisco</div>
 </article>
 </div>
@@ -387,7 +405,7 @@ ol.ranked{list-style:none;counter-reset:rk 4;padding:0;margin:26px 0}
 <p class="rdesc"><span class="m">$2.2 million</span> in state level contributions, including <span class="m">$2 million</span> to Building a Better California</p>
 </li>
 </ol>
-<p class="totalstrip">Billionaires 5&ndash;15 combined: <strong><span class="m">$336 million</span></strong></p>
+<p class="totalstrip">The 15 Billionaires individual donations combined: <strong><span class="m">$336 million</span></strong></p>
 </section>
 <section class="block" id="biggest-spenders"><h2>California's Biggest Spenders</h2>
 <p><strong>Sergey Brin</strong>, the co-founder of <strong>Google</strong> who is still on the board of directors and is a controlling shareholder<sup class="fnref"><a id="fnref11" href="#fn11">11</a></sup>, dwarfed every other billionaire in state-level contributions - contributing <strong><span class="m">$86 million</span></strong> to a host of PACs in the state.<sup class="fnref"><a id="fnref12" href="#fn12">12</a></sup> While Brin did not contribute directly to federal candidates in California or any of the major AI federal PACs, he has contributed <span class="m">$443,000</span> this cycle to the Republican National Committee. Brin’s largest contribution in the state was directed towards his Building a Better California committee - <span class="m">$82 million</span> - that is laser focused on defeating the Billionaire Ballot measure through direct opposition and a series of counter-ballot measures to undercut the initiative.</p>
@@ -406,7 +424,7 @@ ol.ranked{list-style:none;counter-reset:rk 4;padding:0;margin:26px 0}
 <p><strong>State  - Data pulled from California Secretary of State (as of June 2026</strong>)</p>
 <div class="tablewrap"><table>
 <thead><tr><th>PAC</th><th>Jurisdiction</th><th>Summary</th><th>Major donors</th></tr></thead><tbody>
-<tr><td><strong>Building a Better California</strong></td><td><strong>State</strong></td><td>Governor's race mega-PAC supporting Mahan. Raised: <span class="m">$118 million</span></td><td><em>Sergey Brin (<span class="m">$82M</span>), John Doerr III (<span class="m">$10M</span>), Michael Moritz (<span class="m">$7.5M</span>), Patrick Collison (<span class="m">$7M</span>), Eric Schmidt (<span class="m">$3M</span>), Chris Larsen (<span class="m">$2.5M</span>), Tony Xu (<span class="m">$2M</span>), Max Levchin (<span class="m">$1M</span>), MIchael Moritz (<span class="m">$750k</span>),  Daniel Tierney (<span class="m">$500K</span>)</em></td></tr>
+<tr><td><strong>Building a Better California</strong></td><td><strong>State</strong></td><td>Governor's race mega-PAC supporting Mahan. Raised: <span class="m">$118 million</span></td><td><em>Sergey Brin (<span class="m">$82M</span>), John Doerr III (<span class="m">$10M</span>), Michael Moritz (<span class="m">$7.5M</span>), Patrick Collison (<span class="m">$7M</span>), Eric Schmidt (<span class="m">$3M</span>), Chris Larsen (<span class="m">$2.5M</span>), Tony Xu (<span class="m">$2M</span>), Max Levchin (<span class="m">$1M</span>), Michael Moritz (<span class="m">$750k</span>),  Daniel Tierney (<span class="m">$500K</span>)</em></td></tr>
 <tr><td><strong>California is Not for Sale, No on Steyer</strong></td><td><strong>State</strong></td><td>Anti-Steyer Governor's race PAC. Raised: <span class="m">$37.1 million</span></td><td><em>JobsPAC (<span class="m">$15.2M</span>), Californians for  Resilient and Affordable Energy (<span class="m">$13.6M</span>)</em></td></tr>
 <tr><td><strong>Mobilizing Economic Transformation Across California</strong></td><td><strong>State</strong></td><td>Meta's own state PAC focused on multiple California Assembly and Senate races. Raised <span class="m">$20 million</span></td><td><em>Meta (<span class="m">$20M</span>)</em></td></tr>
 <tr><td><strong>Grow California</strong></td><td><strong>State</strong></td><td>Billionaire-funded IE PAC. Most active spender across California Assembly and Senate races, touching 9 contests. Raised <span class="m">$20 million</span></td><td><em>Chris Larsen (<span class="m">$15M</span>), Tim Draper (<span class="m">$5M</span>)</em></td></tr>
@@ -420,7 +438,7 @@ ol.ranked{list-style:none;counter-reset:rk 4;padding:0;margin:26px 0}
 <tr><td><strong>Coalition to Restore California's Middle Class</strong></td><td><strong>State</strong></td><td>Energy industry PAC. Raised: <span class="m">$8.8 million</span></td><td><em>Chevron (<span class="m">$3.8M</span>), Marathon (<span class="m">$2M</span>), Valero (<span class="m">$2.5M</span>)</em></td></tr>
 <tr><td><strong>Deliver for California</strong></td><td><strong>State</strong></td><td>Secondary pro-Mahan governor's race PAC funded largely by tech donors. Raised <span class="m">$3.2 million</span></td><td><em>Sergey Brin (<span class="m">$1M</span>), Paul Bucheit (<span class="m">$1M</span>), Brian Singerman (<span class="m">$250K</span>), Nicholas Pritzker (<span class="m">$100K</span>)</em></td></tr>
 <tr><td><strong>Keep California Golden</strong></td><td><strong>State</strong></td><td>Pro-business state PAC which spent across multiple California Assembly and Senate races. Raised <span class="m">$1.5 million</span></td><td><em>California Association of Realtors (<span class="m">$800k</span>)</em></td></tr>
-<tr><td><strong>Californians for Jobs and a Strong Economy</strong></td><td><strong>State</strong></td><td>Broad pro-business state PAC funded by energy, retail, and tech companies. Raised <span class="m">$5 million</span></td><td><em>PG&amp;E (<span class="m">$210K</span>), Chevron (<span class="m">$179K</span>), Sempra (<span class="m">$165K</span>), In-N-Out Burger (<span class="m">$125K</span>), DaVita (<span class="m">$115K</span>), Walmart (<span class="m">$75K</span>), Coinbase (<span class="m">$60K</span>), Airbnb (<span class="m">$50k</span>), Amzaon (<span class="m">$50k</span>), Doordash (<span class="m">$50k</span>), Google (<span class="m">$45k</span>)</em></td></tr>
+<tr><td><strong>Californians for Jobs and a Strong Economy</strong></td><td><strong>State</strong></td><td>Broad pro-business state PAC funded by energy, retail, and tech companies. Raised <span class="m">$5 million</span></td><td><em>PG&amp;E (<span class="m">$210K</span>), Chevron (<span class="m">$179K</span>), Sempra (<span class="m">$165K</span>), In-N-Out Burger (<span class="m">$125K</span>), DaVita (<span class="m">$115K</span>), Walmart (<span class="m">$75K</span>), Coinbase (<span class="m">$60K</span>), Airbnb (<span class="m">$50k</span>), Amazon (<span class="m">$50k</span>), Doordash (<span class="m">$50k</span>), Google (<span class="m">$45k</span>)</em></td></tr>
 <tr><td><strong>Californians for an Affordable Future</strong></td><td><strong>State</strong></td><td>Chris Larsen-funded PAC supporting Ben Allen for Insurance Commissioner. Raised <span class="m">$1 million</span>.</td><td><em>Chris Larsen (<span class="m">$1M</span>)</em></td></tr>
 <tr><td><strong>Housing Providers for Responsible Solutions</strong></td><td><strong>State</strong></td><td>California Apartment Association PAC which spent across various California state races. Raised <span class="m">$1.3 million</span></td><td><em>California Apartment Association (<span class="m">$775K</span>)</em></td></tr>
 <tr><td><strong>Advocates for Safe Schools Affordable Housing</strong></td><td><strong>State</strong></td><td>PAC funded by JobsPAC and CA Apartment Assoc solely focused on AD 66 - for Seo &amp; opposing Deen. Raised <span class="m">$714k</span></td><td><em>JobsPAC (<span class="m">$367K</span>), CA Apartment Assoc. (<span class="m">$100K</span>), Charter Public Schools PAC (<span class="m">$100K</span>)</em></td></tr>
@@ -488,7 +506,7 @@ ol.ranked{list-style:none;counter-reset:rk 4;padding:0;margin:26px 0}
 <tr><td><strong>AD 68</strong></td><td>Support David Penaloza</td><td><span class="m">$916,000</span></td></tr>
 <tr><td><strong>AD 12</strong></td><td class="oppose">Oppose Jackie Elward</td><td><span class="m">$753,000</span></td></tr>
 <tr><td><strong>AD 12</strong></td><td>Support Eric Lucan</td><td><span class="m">$307,000</span></td></tr>
-<tr><td><strong>AD 65</strong></td><td class="oppose">Oppose Fatima Iqbal-zubair</td><td><span class="m">$638,000</span></td></tr>
+<tr><td><strong>AD 65</strong></td><td class="oppose">Oppose Fatima Iqbal-Zubair</td><td><span class="m">$638,000</span></td></tr>
 <tr><td><strong>AD 65</strong></td><td>Support Ayanna Davis</td><td><span class="m">$1,400,000</span></td></tr>
 <tr><td><strong>SD 10</strong></td><td>Support Scott Sakakihara</td><td><span class="m">$1,000,000</span></td></tr>
 <tr><td><strong>SD 24</strong></td><td class="oppose">Oppose John Erickson</td><td><span class="m">$2,200,000</span></td></tr>
@@ -535,73 +553,76 @@ ol.ranked{list-style:none;counter-reset:rk 4;padding:0;margin:26px 0}
 <p><strong>Grow California</strong>, the PAC founded by crypto billionaires Chris Larsen and Tim Draper, spent <span class="m">$2.6 million</span> in independent expenditures supporting Pulido and <span class="m">$1.5 million</span> in independent expenditures opposing Briceno.</p>
 <p><strong>California Leads</strong> PAC, which received <span class="m">$5 million</span> from both Meta and Google, spent <span class="m">$1.2 million</span> in independent expenditures supporting Pulido.</p>
 <p><strong>JobsPAC</strong> spent <span class="m">$373,000</span> opposing Ada Briceno.</p>
-<figure><svg class="chart network" viewBox="0 0 760 462" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Money flow network">
+<figure><svg class="chart network" viewBox="0 0 760 565" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Money flow network">
 <style>.network text{font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;} .network .num{font-family:'IBM Plex Mono',ui-monospace,monospace;}</style>
 <text x="8" y="24" font-size="11" font-weight="700" letter-spacing="1.5" fill="#777777">TOP PAC DONORS</text>
 <text x="288" y="24" font-size="11" font-weight="700" letter-spacing="1.5" fill="#777777">PACs</text>
 <text x="548" y="24" font-size="11" font-weight="700" letter-spacing="1.5" fill="#777777">INDEPENDENT EXPENDITURES</text>
-<path d="M212,74.0 C250.0,74.0 250.0,74.0 288,74.0" fill="none" stroke="#C9C4BA" stroke-width="4.5"/>
-<path d="M212,132.0 C250.0,132.0 250.0,74.0 288,74.0" fill="none" stroke="#C9C4BA" stroke-width="2.2"/>
-<path d="M212,190.0 C250.0,190.0 250.0,190.0 288,190.0" fill="none" stroke="#C9C4BA" stroke-width="2.2"/>
-<path d="M212,248.0 C250.0,248.0 250.0,190.0 288,190.0" fill="none" stroke="#C9C4BA" stroke-width="2.2"/>
-<path d="M212,306.0 C250.0,306.0 250.0,306.0 288,306.0" fill="none" stroke="#C9C4BA" stroke-width="1.6"/>
-<path d="M212,364.0 C250.0,364.0 250.0,306.0 288,306.0" fill="none" stroke="#C9C4BA" stroke-width="1.6"/>
-<path d="M212,422.0 C250.0,422.0 250.0,306.0 288,306.0" fill="none" stroke="#C9C4BA" stroke-width="1.5"/>
-<path d="M212,190.0 C250.0,190.0 250.0,306.0 288,306.0" fill="none" stroke="#C9C4BA" stroke-width="1.5"/>
-<path d="M492,74.0 C520.0,74.0 520.0,277.0 548,277.0" fill="none" stroke="#BF0316" stroke-opacity="0.45" stroke-width="2.5"/>
-<path d="M492,248.0 C520.0,248.0 520.0,277.0 548,277.0" fill="none" stroke="#BF0316" stroke-opacity="0.45" stroke-width="1.8"/>
-<path d="M492,306.0 C520.0,306.0 520.0,277.0 548,277.0" fill="none" stroke="#BF0316" stroke-opacity="0.45" stroke-width="1.5"/>
-<path d="M492,364.0 C520.0,364.0 520.0,277.0 548,277.0" fill="none" stroke="#BF0316" stroke-opacity="0.45" stroke-width="1.5"/>
-<path d="M492,422.0 C520.0,422.0 520.0,277.0 548,277.0" fill="none" stroke="#BF0316" stroke-opacity="0.45" stroke-width="1.4"/>
-<path d="M492,74.0 C520.0,74.0 520.0,219.0 548,219.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="3.4"/>
-<path d="M492,132.0 C520.0,132.0 520.0,219.0 548,219.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="2.2"/>
-<path d="M492,190.0 C520.0,190.0 520.0,219.0 548,219.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="2.2"/>
-<rect x="8" y="52.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="79.0" font-size="12.5" fill="#141618">Chris Larsen</text>
-<rect x="8" y="110.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="137.0" font-size="12.5" fill="#141618">Tim Daper</text>
-<rect x="8" y="168.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="195.0" font-size="12.5" fill="#141618">Meta</text>
-<rect x="8" y="226.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="253.0" font-size="12.5" fill="#141618">Google</text>
-<rect x="8" y="284.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="311.0" font-size="12.5" fill="#141618">PG&amp;E</text>
-<rect x="8" y="342.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="369.0" font-size="12.5" fill="#141618">Sempra Energy</text>
-<rect x="8" y="400.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="427.0" font-size="12.5" fill="#141618">Sergey Brin, Google</text>
-<rect x="288" y="52.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="72.0" font-size="12.5" font-weight="600" fill="#141618">Grow California</text>
+<path d="M212,124.5 C250.0,124.5 250.0,74.5 288,74.5" fill="none" stroke="#B9B4AA" stroke-width="4.5"/>
+<path d="M212,178.5 C250.0,178.5 250.0,74.5 288,74.5" fill="none" stroke="#B9B4AA" stroke-width="2.2"/>
+<path d="M212,232.5 C250.0,232.5 250.0,220.5 288,220.5" fill="none" stroke="#B9B4AA" stroke-width="2.2"/>
+<path d="M212,286.5 C250.0,286.5 250.0,220.5 288,220.5" fill="none" stroke="#B9B4AA" stroke-width="2.2"/>
+<path d="M212,340.5 C250.0,340.5 250.0,366.5 288,366.5" fill="none" stroke="#B9B4AA" stroke-width="1.6"/>
+<path d="M212,394.5 C250.0,394.5 250.0,366.5 288,366.5" fill="none" stroke="#B9B4AA" stroke-width="1.6"/>
+<path d="M212,448.5 C250.0,448.5 250.0,366.5 288,366.5" fill="none" stroke="#B9B4AA" stroke-width="1.5"/>
+<path d="M212,232.5 C250.0,232.5 250.0,366.5 288,366.5" fill="none" stroke="#B9B4AA" stroke-width="1.5"/>
+<path d="M492,74.5 C520.0,74.5 520.0,318.5 548,318.5" fill="none" stroke="#B9B4AA" stroke-width="2.9"/>
+<path d="M492,293.5 C520.0,293.5 520.0,318.5 548,318.5" fill="none" stroke="#B9B4AA" stroke-width="2.1"/>
+<path d="M492,366.5 C520.0,366.5 520.0,318.5 548,318.5" fill="none" stroke="#B9B4AA" stroke-width="1.8"/>
+<path d="M492,432.5 C520.0,432.5 520.0,318.5 548,318.5" fill="none" stroke="#B9B4AA" stroke-width="1.7"/>
+<path d="M492,498.5 C520.0,498.5 520.0,318.5 548,318.5" fill="none" stroke="#B9B4AA" stroke-width="1.7"/>
+<path d="M492,74.5 C520.0,74.5 520.0,254.5 548,254.5" fill="none" stroke="#B9B4AA" stroke-width="4.0"/>
+<path d="M492,147.5 C520.0,147.5 520.0,254.5 548,254.5" fill="none" stroke="#B9B4AA" stroke-width="2.6"/>
+<path d="M492,220.5 C520.0,220.5 520.0,254.5 548,254.5" fill="none" stroke="#B9B4AA" stroke-width="2.6"/>
+<rect x="8" y="104.5" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Chris Larsen</title></rect>
+<text x="18" y="129.0" font-size="12.5" fill="#141618">Chris Larsen</text>
+<rect x="8" y="158.5" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Tim Draper</title></rect>
+<text x="18" y="183.0" font-size="12.5" fill="#141618">Tim Draper</text>
+<rect x="8" y="212.5" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Meta</title></rect>
+<text x="18" y="237.0" font-size="12.5" fill="#141618">Meta</text>
+<rect x="8" y="266.5" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Google</title></rect>
+<text x="18" y="291.0" font-size="12.5" fill="#141618">Google</text>
+<rect x="8" y="320.5" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>PG&amp;E</title></rect>
+<text x="18" y="345.0" font-size="12.5" fill="#141618">PG&amp;E</text>
+<rect x="8" y="374.5" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Sempra Energy</title></rect>
+<text x="18" y="399.0" font-size="12.5" fill="#141618">Sempra Energy</text>
+<rect x="8" y="428.5" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Sergey Brin, Google</title></rect>
+<text x="18" y="453.0" font-size="12.5" fill="#141618">Sergey Brin, Google</text>
+<rect x="288" y="52.0" width="204" height="45" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Grow California &#8212; $4.1M in this race</title></rect>
+<text x="298" y="68.0" font-size="11.5" font-weight="600" fill="#141618">Grow California</text>
 <text class="num" x="298" y="90.0" font-size="11" fill="#8F7500">$4.1M in this race</text>
-<rect x="288" y="110.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="126.0" font-size="11.5" font-weight="600" fill="#141618">Airbnb’s Citizens for</text>
-<text x="298" y="138.0" font-size="11.5" font-weight="600" fill="#141618">and Affordable Califo…</text>
-<text class="num" x="298" y="148.0" font-size="11" fill="#8F7500">$1.2M in this race</text>
-<rect x="288" y="168.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="188.0" font-size="12.5" font-weight="600" fill="#141618">California Leads</text>
-<text class="num" x="298" y="206.0" font-size="11" fill="#8F7500">$1.2M in this race</text>
-<rect x="288" y="226.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="242.0" font-size="11.5" font-weight="600" fill="#141618">California Apartment</text>
-<text x="298" y="254.0" font-size="11.5" font-weight="600" fill="#141618">Association’s Advance…</text>
-<text class="num" x="298" y="264.0" font-size="11" fill="#8F7500">$723K in this race</text>
-<rect x="288" y="284.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="304.0" font-size="12.5" font-weight="600" fill="#141618">JobsPAC</text>
-<text class="num" x="298" y="322.0" font-size="11" fill="#8F7500">$373K in this race</text>
-<rect x="288" y="342.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="358.0" font-size="11.5" font-weight="600" fill="#141618">California Hotel &amp;</text>
-<text x="298" y="370.0" font-size="11.5" font-weight="600" fill="#141618">Lodging Assoc</text>
-<text class="num" x="298" y="380.0" font-size="11" fill="#8F7500">$343K in this race</text>
-<rect x="288" y="400.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="420.0" font-size="12.5" font-weight="600" fill="#141618">Uber&#x27;s PAC</text>
-<text class="num" x="298" y="438.0" font-size="11" fill="#8F7500">$264K in this race</text>
-<rect x="548" y="197.0" width="204" height="44" rx="6" fill="#141618"/>
-<text x="558" y="214.0" font-size="9.5" font-weight="700" letter-spacing="1" fill="#FFFFFF" fill-opacity="0.75">SUPPORT</text>
-<text x="558" y="230.0" font-size="13" font-weight="600" fill="#FFFFFF">Mark Pulido</text>
-<text class="num" x="744" y="214.0" font-size="11" fill="#FFFFFF" text-anchor="end">$5M</text>
-<rect x="548" y="255.0" width="204" height="44" rx="6" fill="#BF0316"/>
-<text x="558" y="272.0" font-size="9.5" font-weight="700" letter-spacing="1" fill="#FFFFFF" fill-opacity="0.75">OPPOSE</text>
-<text x="558" y="288.0" font-size="13" font-weight="600" fill="#FFFFFF">Ada Briceño</text>
-<text class="num" x="744" y="272.0" font-size="11" fill="#FFFFFF" text-anchor="end">$3.2M</text>
+<rect x="288" y="111.0" width="204" height="73" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Airbnb’s Citizens for an Affordable California PAC &#8212; $1.2M in this race</title></rect>
+<text x="298" y="127.0" font-size="11.5" font-weight="600" fill="#141618">Airbnb’s Citizens for an</text>
+<text x="298" y="141.0" font-size="11.5" font-weight="600" fill="#141618">Affordable California</text>
+<text x="298" y="155.0" font-size="11.5" font-weight="600" fill="#141618">PAC</text>
+<text class="num" x="298" y="177.0" font-size="11" fill="#8F7500">$1.2M in this race</text>
+<rect x="288" y="198.0" width="204" height="45" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>California Leads &#8212; $1.2M in this race</title></rect>
+<text x="298" y="214.0" font-size="11.5" font-weight="600" fill="#141618">California Leads</text>
+<text class="num" x="298" y="236.0" font-size="11" fill="#8F7500">$1.2M in this race</text>
+<rect x="288" y="257.0" width="204" height="73" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>California Apartment Association’s Advance California &#8212; $723K in this race</title></rect>
+<text x="298" y="273.0" font-size="11.5" font-weight="600" fill="#141618">California Apartment</text>
+<text x="298" y="287.0" font-size="11.5" font-weight="600" fill="#141618">Association’s Advance</text>
+<text x="298" y="301.0" font-size="11.5" font-weight="600" fill="#141618">California</text>
+<text class="num" x="298" y="323.0" font-size="11" fill="#8F7500">$723K in this race</text>
+<rect x="288" y="344.0" width="204" height="45" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>JobsPAC &#8212; $373K in this race</title></rect>
+<text x="298" y="360.0" font-size="11.5" font-weight="600" fill="#141618">JobsPAC</text>
+<text class="num" x="298" y="382.0" font-size="11" fill="#8F7500">$373K in this race</text>
+<rect x="288" y="403.0" width="204" height="59" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>California Hotel &amp; Lodging Assoc &#8212; $343K in this race</title></rect>
+<text x="298" y="419.0" font-size="11.5" font-weight="600" fill="#141618">California Hotel &amp;</text>
+<text x="298" y="433.0" font-size="11.5" font-weight="600" fill="#141618">Lodging Assoc</text>
+<text class="num" x="298" y="455.0" font-size="11" fill="#8F7500">$343K in this race</text>
+<rect x="288" y="476.0" width="204" height="45" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Uber&#x27;s PAC &#8212; $264K in this race</title></rect>
+<text x="298" y="492.0" font-size="11.5" font-weight="600" fill="#141618">Uber&#x27;s PAC</text>
+<text class="num" x="298" y="514.0" font-size="11" fill="#8F7500">$264K in this race</text>
+<rect x="548" y="229.5" width="204" height="50" rx="6" fill="#1E5FA8"><title>Support Mark Pulido &#8212; $5M</title></rect>
+<rect x="556" y="237.5" width="74" height="17" rx="8.5" fill="#FFFFFF"/><text x="593.0" y="250.0" font-size="9.5" font-weight="700" letter-spacing="1" fill="#141618" text-anchor="middle">SUPPORT</text>
+<text class="num" x="744" y="250.5" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="end">$5M</text>
+<text x="558" y="268.5" font-size="13.5" font-weight="600" fill="#FFFFFF">Mark Pulido</text>
+<rect x="548" y="293.5" width="204" height="50" rx="6" fill="#1E5FA8"><title>Oppose Ada Briceño &#8212; $3.2M</title></rect>
+<rect x="556" y="301.5" width="66" height="17" rx="8.5" fill="#FFFFFF"/><text x="589.0" y="314.0" font-size="9.5" font-weight="700" letter-spacing="1" fill="#BF0316" text-anchor="middle">OPPOSE</text>
+<text class="num" x="744" y="314.5" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="end">$3.2M</text>
+<text x="558" y="332.5" font-size="13.5" font-weight="600" fill="#FFFFFF">Ada Briceño</text>
+<rect x="8" y="542" width="14" height="14" rx="3" fill="#1E5FA8"/><text x="28" y="553" font-size="11.5" fill="#777777">Democrat</text><rect x="108" y="542" width="14" height="14" rx="3" fill="#BF0316"/><text x="128" y="553" font-size="11.5" fill="#777777">Republican</text><text x="226" y="553" font-size="11.5" fill="#777777">SUPPORT / OPPOSE tags show where the money aimed. Line weight scales with dollars.</text>
 </svg><figcaption>How the money moved in Assembly District 67: top PAC donors, the PACs they fund, and the independent expenditures those PACs made for or against candidates.</figcaption></figure>
 <figure><svg class="chart results" viewBox="0 0 720 184" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Election results">
 <style>.results text{font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;} .results .num{font-family:'IBM Plex Mono',ui-monospace,monospace;}</style>
@@ -631,78 +652,80 @@ ol.ranked{list-style:none;counter-reset:rk 4;padding:0;margin:26px 0}
 <p><strong>Grow California</strong>, the PAC founded by crypto billionaires Chris Larsen and Tim Draper, put over <span class="m">$2 million</span> into the race - <span class="m">$1.1 million</span> in independent expenditures opposing Lopez and <span class="m">$916,000</span> in independent expenditures supporting Penaloza.</p>
 <p><strong>California Leads</strong> spent <span class="m">$1.2 million</span> to support Penaloza and <strong>JobsPAC</strong> spent <span class="m">$114,000</span>.</p>
 <p>“This race is about the future of California - whether we answer to corporations and insiders or to the hard-working people we’re elected to serve,” Lopez said.<sup class="fnref"><a id="fnref36" href="#fn36">36</a></sup></p>
-<figure><svg class="chart network" viewBox="0 0 760 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Money flow network">
+<figure><svg class="chart network" viewBox="0 0 760 565" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Money flow network">
 <style>.network text{font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;} .network .num{font-family:'IBM Plex Mono',ui-monospace,monospace;}</style>
 <text x="8" y="24" font-size="11" font-weight="700" letter-spacing="1.5" fill="#777777">TOP PAC DONORS</text>
 <text x="288" y="24" font-size="11" font-weight="700" letter-spacing="1.5" fill="#777777">PACs</text>
 <text x="548" y="24" font-size="11" font-weight="700" letter-spacing="1.5" fill="#777777">INDEPENDENT EXPENDITURES</text>
-<path d="M212,74.0 C250.0,74.0 250.0,103.0 288,103.0" fill="none" stroke="#C9C4BA" stroke-width="4.5"/>
-<path d="M212,132.0 C250.0,132.0 250.0,103.0 288,103.0" fill="none" stroke="#C9C4BA" stroke-width="2.2"/>
-<path d="M212,190.0 C250.0,190.0 250.0,161.0 288,161.0" fill="none" stroke="#C9C4BA" stroke-width="2.2"/>
-<path d="M212,248.0 C250.0,248.0 250.0,161.0 288,161.0" fill="none" stroke="#C9C4BA" stroke-width="2.2"/>
-<path d="M212,306.0 C250.0,306.0 250.0,335.0 288,335.0" fill="none" stroke="#C9C4BA" stroke-width="1.2"/>
-<path d="M212,364.0 C250.0,364.0 250.0,393.0 288,393.0" fill="none" stroke="#C9C4BA" stroke-width="1.6"/>
-<path d="M212,422.0 C250.0,422.0 250.0,393.0 288,393.0" fill="none" stroke="#C9C4BA" stroke-width="1.6"/>
-<path d="M212,480.0 C250.0,480.0 250.0,393.0 288,393.0" fill="none" stroke="#C9C4BA" stroke-width="1.5"/>
-<path d="M212,190.0 C250.0,190.0 250.0,393.0 288,393.0" fill="none" stroke="#C9C4BA" stroke-width="1.5"/>
-<path d="M492,393.0 C520.0,393.0 520.0,248.0 548,248.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="1.4"/>
-<path d="M492,161.0 C520.0,161.0 520.0,248.0 548,248.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="2.2"/>
-<path d="M492,103.0 C520.0,103.0 520.0,248.0 548,248.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="2.0"/>
-<path d="M492,451.0 C520.0,451.0 520.0,248.0 548,248.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="1.4"/>
-<path d="M492,219.0 C520.0,219.0 520.0,248.0 548,248.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="1.6"/>
-<path d="M492,277.0 C520.0,277.0 520.0,306.0 548,306.0" fill="none" stroke="#BF0316" stroke-opacity="0.45" stroke-width="1.5"/>
-<path d="M492,103.0 C520.0,103.0 520.0,306.0 548,306.0" fill="none" stroke="#BF0316" stroke-opacity="0.45" stroke-width="2.1"/>
-<path d="M492,335.0 C520.0,335.0 520.0,306.0 548,306.0" fill="none" stroke="#BF0316" stroke-opacity="0.45" stroke-width="1.5"/>
-<rect x="8" y="52.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="79.0" font-size="12.5" fill="#141618">Chris Larsen</text>
-<rect x="8" y="110.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="137.0" font-size="12.5" fill="#141618">Tim Daper</text>
-<rect x="8" y="168.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="195.0" font-size="12.5" fill="#141618">Meta</text>
-<rect x="8" y="226.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="253.0" font-size="12.5" fill="#141618">Google</text>
-<rect x="8" y="284.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="303.0" font-size="12" fill="#141618">California Apartment</text>
-<text x="18" y="318.0" font-size="12" fill="#141618">Association</text>
-<rect x="8" y="342.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="369.0" font-size="12.5" fill="#141618">PG&amp;E</text>
-<rect x="8" y="400.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="427.0" font-size="12.5" fill="#141618">Sempra Energy</text>
-<rect x="8" y="458.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="485.0" font-size="12.5" fill="#141618">Sergey Brin, Google</text>
-<rect x="288" y="81.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="101.0" font-size="12.5" font-weight="600" fill="#141618">Grow California</text>
-<text class="num" x="298" y="119.0" font-size="11" fill="#8F7500">$2M in this race</text>
-<rect x="288" y="139.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="159.0" font-size="12.5" font-weight="600" fill="#141618">California Leads</text>
-<text class="num" x="298" y="177.0" font-size="11" fill="#8F7500">$1.2M in this race</text>
-<rect x="288" y="197.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="213.0" font-size="11.5" font-weight="600" fill="#141618">Focused on</text>
-<text x="298" y="225.0" font-size="11.5" font-weight="600" fill="#141618">Affordability</text>
-<text class="num" x="298" y="235.0" font-size="11" fill="#8F7500">$510K in this race</text>
-<rect x="288" y="255.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="271.0" font-size="11.5" font-weight="600" fill="#141618">Coalition to Restore</text>
-<text x="298" y="283.0" font-size="11.5" font-weight="600" fill="#141618">California’s Working …</text>
-<text class="num" x="298" y="293.0" font-size="11" fill="#8F7500">$370K in this race</text>
-<rect x="288" y="313.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="329.0" font-size="11.5" font-weight="600" fill="#141618">Housing Providers for</text>
-<text x="298" y="341.0" font-size="11.5" font-weight="600" fill="#141618">Responsible Solutions</text>
-<text class="num" x="298" y="351.0" font-size="11" fill="#8F7500">$370K in this race</text>
-<rect x="288" y="371.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="391.0" font-size="12.5" font-weight="600" fill="#141618">JobsPAC</text>
-<text class="num" x="298" y="409.0" font-size="11" fill="#8F7500">$275K in this race</text>
-<rect x="288" y="429.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="445.0" font-size="11.5" font-weight="600" fill="#141618">California Apartment</text>
-<text x="298" y="457.0" font-size="11.5" font-weight="600" fill="#141618">Association’s Advance…</text>
-<text class="num" x="298" y="467.0" font-size="11" fill="#8F7500">$185K in this race</text>
-<rect x="548" y="226.0" width="204" height="44" rx="6" fill="#141618"/>
-<text x="558" y="243.0" font-size="9.5" font-weight="700" letter-spacing="1" fill="#FFFFFF" fill-opacity="0.75">SUPPORT</text>
-<text x="558" y="259.0" font-size="13" font-weight="600" fill="#FFFFFF">David Penaloza</text>
-<text class="num" x="744" y="243.0" font-size="11" fill="#FFFFFF" text-anchor="end">$3.1M</text>
-<rect x="548" y="284.0" width="204" height="44" rx="6" fill="#BF0316"/>
-<text x="558" y="301.0" font-size="9.5" font-weight="700" letter-spacing="1" fill="#FFFFFF" fill-opacity="0.75">OPPOSE</text>
-<text x="558" y="317.0" font-size="13" font-weight="600" fill="#FFFFFF">Jessie Lopez</text>
-<text class="num" x="744" y="301.0" font-size="11" fill="#FFFFFF" text-anchor="end">$1.8M</text>
+<path d="M212,94.5 C250.0,94.5 250.0,74.5 288,74.5" fill="none" stroke="#B9B4AA" stroke-width="4.5"/>
+<path d="M212,148.5 C250.0,148.5 250.0,74.5 288,74.5" fill="none" stroke="#B9B4AA" stroke-width="2.2"/>
+<path d="M212,202.5 C250.0,202.5 250.0,133.5 288,133.5" fill="none" stroke="#B9B4AA" stroke-width="2.2"/>
+<path d="M212,256.5 C250.0,256.5 250.0,133.5 288,133.5" fill="none" stroke="#B9B4AA" stroke-width="2.2"/>
+<path d="M212,313.5 C250.0,313.5 250.0,345.5 288,345.5" fill="none" stroke="#B9B4AA" stroke-width="1.2"/>
+<path d="M212,370.5 C250.0,370.5 250.0,411.5 288,411.5" fill="none" stroke="#B9B4AA" stroke-width="1.6"/>
+<path d="M212,424.5 C250.0,424.5 250.0,411.5 288,411.5" fill="none" stroke="#B9B4AA" stroke-width="1.6"/>
+<path d="M212,478.5 C250.0,478.5 250.0,411.5 288,411.5" fill="none" stroke="#B9B4AA" stroke-width="1.5"/>
+<path d="M212,202.5 C250.0,202.5 250.0,411.5 288,411.5" fill="none" stroke="#B9B4AA" stroke-width="1.5"/>
+<path d="M492,411.5 C520.0,411.5 520.0,254.5 548,254.5" fill="none" stroke="#B9B4AA" stroke-width="1.7"/>
+<path d="M492,133.5 C520.0,133.5 520.0,254.5 548,254.5" fill="none" stroke="#B9B4AA" stroke-width="2.6"/>
+<path d="M492,74.5 C520.0,74.5 520.0,254.5 548,254.5" fill="none" stroke="#B9B4AA" stroke-width="2.3"/>
+<path d="M492,484.5 C520.0,484.5 520.0,254.5 548,254.5" fill="none" stroke="#B9B4AA" stroke-width="1.6"/>
+<path d="M492,192.5 C520.0,192.5 520.0,254.5 548,254.5" fill="none" stroke="#B9B4AA" stroke-width="1.9"/>
+<path d="M492,265.5 C520.0,265.5 520.0,318.5 548,318.5" fill="none" stroke="#B9B4AA" stroke-width="1.8"/>
+<path d="M492,74.5 C520.0,74.5 520.0,318.5 548,318.5" fill="none" stroke="#B9B4AA" stroke-width="2.5"/>
+<path d="M492,345.5 C520.0,345.5 520.0,318.5 548,318.5" fill="none" stroke="#B9B4AA" stroke-width="1.8"/>
+<rect x="8" y="74.5" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Chris Larsen</title></rect>
+<text x="18" y="99.0" font-size="12.5" fill="#141618">Chris Larsen</text>
+<rect x="8" y="128.5" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Tim Draper</title></rect>
+<text x="18" y="153.0" font-size="12.5" fill="#141618">Tim Draper</text>
+<rect x="8" y="182.5" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Meta</title></rect>
+<text x="18" y="207.0" font-size="12.5" fill="#141618">Meta</text>
+<rect x="8" y="236.5" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Google</title></rect>
+<text x="18" y="261.0" font-size="12.5" fill="#141618">Google</text>
+<rect x="8" y="290.5" width="204" height="46" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>California Apartment Association</title></rect>
+<text x="18" y="310.5" font-size="12.5" fill="#141618">California Apartment</text>
+<text x="18" y="325.5" font-size="12.5" fill="#141618">Association</text>
+<rect x="8" y="350.5" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>PG&amp;E</title></rect>
+<text x="18" y="375.0" font-size="12.5" fill="#141618">PG&amp;E</text>
+<rect x="8" y="404.5" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Sempra Energy</title></rect>
+<text x="18" y="429.0" font-size="12.5" fill="#141618">Sempra Energy</text>
+<rect x="8" y="458.5" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Sergey Brin, Google</title></rect>
+<text x="18" y="483.0" font-size="12.5" fill="#141618">Sergey Brin, Google</text>
+<rect x="288" y="52.0" width="204" height="45" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Grow California &#8212; $2M in this race</title></rect>
+<text x="298" y="68.0" font-size="11.5" font-weight="600" fill="#141618">Grow California</text>
+<text class="num" x="298" y="90.0" font-size="11" fill="#8F7500">$2M in this race</text>
+<rect x="288" y="111.0" width="204" height="45" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>California Leads &#8212; $1.2M in this race</title></rect>
+<text x="298" y="127.0" font-size="11.5" font-weight="600" fill="#141618">California Leads</text>
+<text class="num" x="298" y="149.0" font-size="11" fill="#8F7500">$1.2M in this race</text>
+<rect x="288" y="170.0" width="204" height="45" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Focused on Affordability &#8212; $510K in this race</title></rect>
+<text x="298" y="186.0" font-size="11.5" font-weight="600" fill="#141618">Focused on Affordability</text>
+<text class="num" x="298" y="208.0" font-size="11" fill="#8F7500">$510K in this race</text>
+<rect x="288" y="229.0" width="204" height="73" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Coalition to Restore California’s Working Class &#8212; $370K in this race</title></rect>
+<text x="298" y="245.0" font-size="11.5" font-weight="600" fill="#141618">Coalition to Restore</text>
+<text x="298" y="259.0" font-size="11.5" font-weight="600" fill="#141618">California’s Working</text>
+<text x="298" y="273.0" font-size="11.5" font-weight="600" fill="#141618">Class</text>
+<text class="num" x="298" y="295.0" font-size="11" fill="#8F7500">$370K in this race</text>
+<rect x="288" y="316.0" width="204" height="59" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Housing Providers for Responsible Solutions &#8212; $370K in this race</title></rect>
+<text x="298" y="332.0" font-size="11.5" font-weight="600" fill="#141618">Housing Providers for</text>
+<text x="298" y="346.0" font-size="11.5" font-weight="600" fill="#141618">Responsible Solutions</text>
+<text class="num" x="298" y="368.0" font-size="11" fill="#8F7500">$370K in this race</text>
+<rect x="288" y="389.0" width="204" height="45" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>JobsPAC &#8212; $275K in this race</title></rect>
+<text x="298" y="405.0" font-size="11.5" font-weight="600" fill="#141618">JobsPAC</text>
+<text class="num" x="298" y="427.0" font-size="11" fill="#8F7500">$275K in this race</text>
+<rect x="288" y="448.0" width="204" height="73" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>California Apartment Association’s Advance California &#8212; $185K in this race</title></rect>
+<text x="298" y="464.0" font-size="11.5" font-weight="600" fill="#141618">California Apartment</text>
+<text x="298" y="478.0" font-size="11.5" font-weight="600" fill="#141618">Association’s Advance</text>
+<text x="298" y="492.0" font-size="11.5" font-weight="600" fill="#141618">California</text>
+<text class="num" x="298" y="514.0" font-size="11" fill="#8F7500">$185K in this race</text>
+<rect x="548" y="229.5" width="204" height="50" rx="6" fill="#1E5FA8"><title>Support David Penaloza &#8212; $3.1M</title></rect>
+<rect x="556" y="237.5" width="74" height="17" rx="8.5" fill="#FFFFFF"/><text x="593.0" y="250.0" font-size="9.5" font-weight="700" letter-spacing="1" fill="#141618" text-anchor="middle">SUPPORT</text>
+<text class="num" x="744" y="250.5" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="end">$3.1M</text>
+<text x="558" y="268.5" font-size="13.5" font-weight="600" fill="#FFFFFF">David Penaloza</text>
+<rect x="548" y="293.5" width="204" height="50" rx="6" fill="#1E5FA8"><title>Oppose Jessie Lopez &#8212; $1.8M</title></rect>
+<rect x="556" y="301.5" width="66" height="17" rx="8.5" fill="#FFFFFF"/><text x="589.0" y="314.0" font-size="9.5" font-weight="700" letter-spacing="1" fill="#BF0316" text-anchor="middle">OPPOSE</text>
+<text class="num" x="744" y="314.5" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="end">$1.8M</text>
+<text x="558" y="332.5" font-size="13.5" font-weight="600" fill="#FFFFFF">Jessie Lopez</text>
+<rect x="8" y="542" width="14" height="14" rx="3" fill="#1E5FA8"/><text x="28" y="553" font-size="11.5" fill="#777777">Democrat</text><rect x="108" y="542" width="14" height="14" rx="3" fill="#BF0316"/><text x="128" y="553" font-size="11.5" fill="#777777">Republican</text><text x="226" y="553" font-size="11.5" fill="#777777">SUPPORT / OPPOSE tags show where the money aimed. Line weight scales with dollars.</text>
 </svg><figcaption>How the money moved in Assembly District 68: top PAC donors, the PACs they fund, and the independent expenditures those PACs made for or against candidates.</figcaption></figure>
 <figure><svg class="chart results" viewBox="0 0 720 184" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Election results">
 <style>.results text{font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;} .results .num{font-family:'IBM Plex Mono',ui-monospace,monospace;}</style>
@@ -737,64 +760,68 @@ ol.ranked{list-style:none;counter-reset:rk 4;padding:0;margin:26px 0}
 <text x="8" y="24" font-size="11" font-weight="700" letter-spacing="1.5" fill="#777777">TOP PAC DONORS</text>
 <text x="288" y="24" font-size="11" font-weight="700" letter-spacing="1.5" fill="#777777">PACs</text>
 <text x="548" y="24" font-size="11" font-weight="700" letter-spacing="1.5" fill="#777777">INDEPENDENT EXPENDITURES</text>
-<path d="M212,74.0 C250.0,74.0 250.0,161.0 288,161.0" fill="none" stroke="#C9C4BA" stroke-width="2.2"/>
-<path d="M212,132.0 C250.0,132.0 250.0,161.0 288,161.0" fill="none" stroke="#C9C4BA" stroke-width="2.2"/>
-<path d="M212,190.0 C250.0,190.0 250.0,277.0 288,277.0" fill="none" stroke="#C9C4BA" stroke-width="1.6"/>
-<path d="M212,248.0 C250.0,248.0 250.0,277.0 288,277.0" fill="none" stroke="#C9C4BA" stroke-width="1.6"/>
-<path d="M212,306.0 C250.0,306.0 250.0,277.0 288,277.0" fill="none" stroke="#C9C4BA" stroke-width="1.5"/>
-<path d="M212,74.0 C250.0,74.0 250.0,277.0 288,277.0" fill="none" stroke="#C9C4BA" stroke-width="1.5"/>
-<path d="M212,364.0 C250.0,364.0 250.0,393.0 288,393.0" fill="none" stroke="#C9C4BA" stroke-width="1.1"/>
-<path d="M212,422.0 C250.0,422.0 250.0,393.0 288,393.0" fill="none" stroke="#C9C4BA" stroke-width="1.1"/>
-<path d="M212,190.0 C250.0,190.0 250.0,393.0 288,393.0" fill="none" stroke="#C9C4BA" stroke-width="1.1"/>
-<path d="M212,480.0 C250.0,480.0 250.0,393.0 288,393.0" fill="none" stroke="#C9C4BA" stroke-width="1.1"/>
-<path d="M492,277.0 C520.0,277.0 520.0,306.0 548,306.0" fill="none" stroke="#BF0316" stroke-opacity="0.45" stroke-width="1.5"/>
-<path d="M492,335.0 C520.0,335.0 520.0,306.0 548,306.0" fill="none" stroke="#BF0316" stroke-opacity="0.45" stroke-width="1.2"/>
-<path d="M492,219.0 C520.0,219.0 520.0,248.0 548,248.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="1.5"/>
-<path d="M492,161.0 C520.0,161.0 520.0,248.0 548,248.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="2.6"/>
-<path d="M492,335.0 C520.0,335.0 520.0,248.0 548,248.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="1.4"/>
-<path d="M492,393.0 C520.0,393.0 520.0,248.0 548,248.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="1.4"/>
-<rect x="8" y="52.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="79.0" font-size="12.5" fill="#141618">Meta</text>
-<rect x="8" y="110.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="137.0" font-size="12.5" fill="#141618">Google</text>
-<rect x="8" y="168.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="195.0" font-size="12.5" fill="#141618">PG&amp;E</text>
-<rect x="8" y="226.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="253.0" font-size="12.5" fill="#141618">Sempra Energy</text>
-<rect x="8" y="284.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="311.0" font-size="12.5" fill="#141618">Sergey Brin, Google</text>
-<rect x="8" y="342.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="361.0" font-size="12" fill="#141618">CAlifornia Apartment</text>
-<text x="18" y="376.0" font-size="12" fill="#141618">Association</text>
-<rect x="8" y="400.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="427.0" font-size="12.5" fill="#141618">DaVita</text>
-<rect x="8" y="458.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="485.0" font-size="12.5" fill="#141618">Uber</text>
-<rect x="288" y="139.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="159.0" font-size="12.5" font-weight="600" fill="#141618">California Leads</text>
-<text class="num" x="298" y="177.0" font-size="11" fill="#8F7500">$1.7M in this race</text>
-<rect x="288" y="197.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="213.0" font-size="11.5" font-weight="600" fill="#141618">Meta (Mobilizing</text>
-<text x="298" y="225.0" font-size="11.5" font-weight="600" fill="#141618">Economic Transformati…</text>
-<text class="num" x="298" y="235.0" font-size="11" fill="#8F7500">$350K in this race</text>
-<rect x="288" y="255.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="275.0" font-size="12.5" font-weight="600" fill="#141618">JobsPAC</text>
-<text class="num" x="298" y="293.0" font-size="11" fill="#8F7500">$342K in this race</text>
-<rect x="288" y="313.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="329.0" font-size="11.5" font-weight="600" fill="#141618">California Apartment</text>
-<text x="298" y="341.0" font-size="11.5" font-weight="600" fill="#141618">Association’s Advance…</text>
-<text class="num" x="298" y="351.0" font-size="11" fill="#8F7500">$238K in this race</text>
-<rect x="288" y="371.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="391.0" font-size="12.5" font-weight="600" fill="#141618">Keep California Golden</text>
-<text class="num" x="298" y="409.0" font-size="11" fill="#8F7500">$201K in this race</text>
-<rect x="548" y="226.0" width="204" height="44" rx="6" fill="#141618"/>
-<text x="558" y="243.0" font-size="9.5" font-weight="700" letter-spacing="1" fill="#FFFFFF" fill-opacity="0.75">SUPPORT</text>
-<text x="558" y="259.0" font-size="13" font-weight="600" fill="#FFFFFF">Andrae Gonzales</text>
-<text class="num" x="744" y="243.0" font-size="11" fill="#FFFFFF" text-anchor="end">$2.5M</text>
-<rect x="548" y="284.0" width="204" height="44" rx="6" fill="#BF0316"/>
-<text x="558" y="301.0" font-size="9.5" font-weight="700" letter-spacing="1" fill="#FFFFFF" fill-opacity="0.75">OPPOSE</text>
-<text x="558" y="317.0" font-size="13" font-weight="600" fill="#FFFFFF">Ana Palacio</text>
-<text class="num" x="744" y="301.0" font-size="11" fill="#FFFFFF" text-anchor="end">$356K</text>
+<path d="M212,72.0 C250.0,72.0 250.0,111.0 288,111.0" fill="none" stroke="#B9B4AA" stroke-width="2.2"/>
+<path d="M212,126.0 C250.0,126.0 250.0,111.0 288,111.0" fill="none" stroke="#B9B4AA" stroke-width="2.2"/>
+<path d="M212,180.0 C250.0,180.0 250.0,271.0 288,271.0" fill="none" stroke="#B9B4AA" stroke-width="1.6"/>
+<path d="M212,234.0 C250.0,234.0 250.0,271.0 288,271.0" fill="none" stroke="#B9B4AA" stroke-width="1.6"/>
+<path d="M212,288.0 C250.0,288.0 250.0,271.0 288,271.0" fill="none" stroke="#B9B4AA" stroke-width="1.5"/>
+<path d="M212,72.0 C250.0,72.0 250.0,271.0 288,271.0" fill="none" stroke="#B9B4AA" stroke-width="1.5"/>
+<path d="M212,345.0 C250.0,345.0 250.0,417.0 288,417.0" fill="none" stroke="#B9B4AA" stroke-width="1.1"/>
+<path d="M212,402.0 C250.0,402.0 250.0,417.0 288,417.0" fill="none" stroke="#B9B4AA" stroke-width="1.1"/>
+<path d="M212,180.0 C250.0,180.0 250.0,417.0 288,417.0" fill="none" stroke="#B9B4AA" stroke-width="1.1"/>
+<path d="M212,456.0 C250.0,456.0 250.0,417.0 288,417.0" fill="none" stroke="#B9B4AA" stroke-width="1.1"/>
+<path d="M492,271.0 C520.0,271.0 520.0,296.0 548,296.0" fill="none" stroke="#B9B4AA" stroke-width="1.7"/>
+<path d="M492,344.0 C520.0,344.0 520.0,296.0 548,296.0" fill="none" stroke="#B9B4AA" stroke-width="1.4"/>
+<path d="M492,191.0 C520.0,191.0 520.0,232.0 548,232.0" fill="none" stroke="#B9B4AA" stroke-width="1.8"/>
+<path d="M492,111.0 C520.0,111.0 520.0,232.0 548,232.0" fill="none" stroke="#B9B4AA" stroke-width="3.1"/>
+<path d="M492,344.0 C520.0,344.0 520.0,232.0 548,232.0" fill="none" stroke="#B9B4AA" stroke-width="1.6"/>
+<path d="M492,417.0 C520.0,417.0 520.0,232.0 548,232.0" fill="none" stroke="#B9B4AA" stroke-width="1.6"/>
+<rect x="8" y="52.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Meta</title></rect>
+<text x="18" y="76.5" font-size="12.5" fill="#141618">Meta</text>
+<rect x="8" y="106.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Google</title></rect>
+<text x="18" y="130.5" font-size="12.5" fill="#141618">Google</text>
+<rect x="8" y="160.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>PG&amp;E</title></rect>
+<text x="18" y="184.5" font-size="12.5" fill="#141618">PG&amp;E</text>
+<rect x="8" y="214.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Sempra Energy</title></rect>
+<text x="18" y="238.5" font-size="12.5" fill="#141618">Sempra Energy</text>
+<rect x="8" y="268.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Sergey Brin, Google</title></rect>
+<text x="18" y="292.5" font-size="12.5" fill="#141618">Sergey Brin, Google</text>
+<rect x="8" y="322.0" width="204" height="46" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>California Apartment Association</title></rect>
+<text x="18" y="342.0" font-size="12.5" fill="#141618">California Apartment</text>
+<text x="18" y="357.0" font-size="12.5" fill="#141618">Association</text>
+<rect x="8" y="382.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>DaVita</title></rect>
+<text x="18" y="406.5" font-size="12.5" fill="#141618">DaVita</text>
+<rect x="8" y="436.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Uber</title></rect>
+<text x="18" y="460.5" font-size="12.5" fill="#141618">Uber</text>
+<rect x="288" y="88.5" width="204" height="45" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>California Leads &#8212; $1.7M in this race</title></rect>
+<text x="298" y="104.5" font-size="11.5" font-weight="600" fill="#141618">California Leads</text>
+<text class="num" x="298" y="126.5" font-size="11" fill="#8F7500">$1.7M in this race</text>
+<rect x="288" y="147.5" width="204" height="87" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Meta (Mobilizing Economic Transformation Across [META] California) &#8212; $350K in this race</title></rect>
+<text x="298" y="163.5" font-size="11.5" font-weight="600" fill="#141618">Meta (Mobilizing</text>
+<text x="298" y="177.5" font-size="11.5" font-weight="600" fill="#141618">Economic Transformation</text>
+<text x="298" y="191.5" font-size="11.5" font-weight="600" fill="#141618">Across [META]</text>
+<text x="298" y="205.5" font-size="11.5" font-weight="600" fill="#141618">California)</text>
+<text class="num" x="298" y="227.5" font-size="11" fill="#8F7500">$350K in this race</text>
+<rect x="288" y="248.5" width="204" height="45" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>JobsPAC &#8212; $342K in this race</title></rect>
+<text x="298" y="264.5" font-size="11.5" font-weight="600" fill="#141618">JobsPAC</text>
+<text class="num" x="298" y="286.5" font-size="11" fill="#8F7500">$342K in this race</text>
+<rect x="288" y="307.5" width="204" height="73" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>California Apartment Association’s Advance California &#8212; $238K in this race</title></rect>
+<text x="298" y="323.5" font-size="11.5" font-weight="600" fill="#141618">California Apartment</text>
+<text x="298" y="337.5" font-size="11.5" font-weight="600" fill="#141618">Association’s Advance</text>
+<text x="298" y="351.5" font-size="11.5" font-weight="600" fill="#141618">California</text>
+<text class="num" x="298" y="373.5" font-size="11" fill="#8F7500">$238K in this race</text>
+<rect x="288" y="394.5" width="204" height="45" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Keep California Golden &#8212; $201K in this race</title></rect>
+<text x="298" y="410.5" font-size="11.5" font-weight="600" fill="#141618">Keep California Golden</text>
+<text class="num" x="298" y="432.5" font-size="11" fill="#8F7500">$201K in this race</text>
+<rect x="548" y="207.0" width="204" height="50" rx="6" fill="#1E5FA8"><title>Support Andrae Gonzales &#8212; $2.5M</title></rect>
+<rect x="556" y="215.0" width="74" height="17" rx="8.5" fill="#FFFFFF"/><text x="593.0" y="227.5" font-size="9.5" font-weight="700" letter-spacing="1" fill="#141618" text-anchor="middle">SUPPORT</text>
+<text class="num" x="744" y="228.0" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="end">$2.5M</text>
+<text x="558" y="246.0" font-size="13.5" font-weight="600" fill="#FFFFFF">Andrae Gonzales</text>
+<rect x="548" y="271.0" width="204" height="50" rx="6" fill="#1E5FA8"><title>Oppose Ana Palacio &#8212; $356K</title></rect>
+<rect x="556" y="279.0" width="66" height="17" rx="8.5" fill="#FFFFFF"/><text x="589.0" y="291.5" font-size="9.5" font-weight="700" letter-spacing="1" fill="#BF0316" text-anchor="middle">OPPOSE</text>
+<text class="num" x="744" y="292.0" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="end">$356K</text>
+<text x="558" y="310.0" font-size="13.5" font-weight="600" fill="#FFFFFF">Ana Palacio</text>
+<rect x="8" y="497" width="14" height="14" rx="3" fill="#1E5FA8"/><text x="28" y="508" font-size="11.5" fill="#777777">Democrat</text><rect x="108" y="497" width="14" height="14" rx="3" fill="#BF0316"/><text x="128" y="508" font-size="11.5" fill="#777777">Republican</text><text x="226" y="508" font-size="11.5" fill="#777777">SUPPORT / OPPOSE tags show where the money aimed. Line weight scales with dollars.</text>
 </svg><figcaption>How the money moved in Assembly District 35: top PAC donors, the PACs they fund, and the independent expenditures those PACs made for or against candidates.</figcaption></figure>
 <figure><svg class="chart results" viewBox="0 0 720 184" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Election results">
 <style>.results text{font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;} .results .num{font-family:'IBM Plex Mono',ui-monospace,monospace;}</style>
@@ -823,39 +850,40 @@ ol.ranked{list-style:none;counter-reset:rk 4;padding:0;margin:26px 0}
 <p>The billionaires are committed to electing Lucan and defeating Elwald, who is backed by labor and progressive groups.</p>
 <p><strong>Grow California</strong>, the PAC founded by crypto billionaires Chris Larsen and Tim Draper, poured more than <span class="m">$1 million</span> dollars into the race. The political committee spent over <span class="m">$750,000</span> running a constant stream of attack ads against Elwald and <span class="m">$307,000</span> on ads in support of Lucan.</p>
 <p>Elwald said, “They haven’t seen anything yet. They spent a million dollars but they couldn’t stop me, they couldn’t stop our movement.”<sup class="fnref"><a id="fnref38" href="#fn38">38</a></sup></p>
-<figure><svg class="chart network" viewBox="0 0 760 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Money flow network">
+<figure><svg class="chart network" viewBox="0 0 760 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Money flow network">
 <style>.network text{font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;} .network .num{font-family:'IBM Plex Mono',ui-monospace,monospace;}</style>
 <text x="8" y="24" font-size="11" font-weight="700" letter-spacing="1.5" fill="#777777">TOP PAC DONORS</text>
 <text x="288" y="24" font-size="11" font-weight="700" letter-spacing="1.5" fill="#777777">PACs</text>
 <text x="548" y="24" font-size="11" font-weight="700" letter-spacing="1.5" fill="#777777">INDEPENDENT EXPENDITURES</text>
-<path d="M212,74.0 C250.0,74.0 250.0,103.0 288,103.0" fill="none" stroke="#C9C4BA" stroke-width="4.5"/>
-<path d="M212,132.0 C250.0,132.0 250.0,103.0 288,103.0" fill="none" stroke="#C9C4BA" stroke-width="2.2"/>
-<path d="M212,190.0 C250.0,190.0 250.0,161.0 288,161.0" fill="none" stroke="#C9C4BA" stroke-width="1.2"/>
-<path d="M492,103.0 C520.0,103.0 520.0,103.0 548,103.0" fill="none" stroke="#BF0316" stroke-opacity="0.45" stroke-width="1.8"/>
-<path d="M492,161.0 C520.0,161.0 520.0,103.0 548,103.0" fill="none" stroke="#BF0316" stroke-opacity="0.45" stroke-width="1.3"/>
-<path d="M492,103.0 C520.0,103.0 520.0,161.0 548,161.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="1.5"/>
-<rect x="8" y="52.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="79.0" font-size="12.5" fill="#141618">Chris Larsen</text>
-<rect x="8" y="110.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="137.0" font-size="12.5" fill="#141618">Tim Daper</text>
-<rect x="8" y="168.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="187.0" font-size="12" fill="#141618">California Apartment</text>
-<text x="18" y="202.0" font-size="12" fill="#141618">Association</text>
-<rect x="288" y="81.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="101.0" font-size="12.5" font-weight="600" fill="#141618">Grow California</text>
-<text class="num" x="298" y="119.0" font-size="11" fill="#8F7500">$1.1M in this race</text>
-<rect x="288" y="139.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="155.0" font-size="11.5" font-weight="600" fill="#141618">Housing Providers for</text>
-<text x="298" y="167.0" font-size="11.5" font-weight="600" fill="#141618">Responsible Solution</text>
-<text class="num" x="298" y="177.0" font-size="11" fill="#8F7500">$172K in this race</text>
-<rect x="548" y="81.0" width="204" height="44" rx="6" fill="#BF0316"/>
-<text x="558" y="98.0" font-size="9.5" font-weight="700" letter-spacing="1" fill="#FFFFFF" fill-opacity="0.75">OPPOSE</text>
-<text x="558" y="114.0" font-size="13" font-weight="600" fill="#FFFFFF">Jackie Elward</text>
-<text class="num" x="744" y="98.0" font-size="11" fill="#FFFFFF" text-anchor="end">$925K</text>
-<rect x="548" y="139.0" width="204" height="44" rx="6" fill="#141618"/>
-<text x="558" y="156.0" font-size="9.5" font-weight="700" letter-spacing="1" fill="#FFFFFF" fill-opacity="0.75">SUPPORT</text>
-<text x="558" y="172.0" font-size="13" font-weight="600" fill="#FFFFFF">Eric Lucan</text>
-<text class="num" x="744" y="156.0" font-size="11" fill="#FFFFFF" text-anchor="end">$307K</text>
+<path d="M212,72.0 C250.0,72.0 250.0,92.5 288,92.5" fill="none" stroke="#B9B4AA" stroke-width="4.5"/>
+<path d="M212,126.0 C250.0,126.0 250.0,92.5 288,92.5" fill="none" stroke="#B9B4AA" stroke-width="2.2"/>
+<path d="M212,183.0 C250.0,183.0 250.0,158.5 288,158.5" fill="none" stroke="#B9B4AA" stroke-width="1.2"/>
+<path d="M492,92.5 C520.0,92.5 520.0,97.0 548,97.0" fill="none" stroke="#B9B4AA" stroke-width="2.2"/>
+<path d="M492,158.5 C520.0,158.5 520.0,97.0 548,97.0" fill="none" stroke="#B9B4AA" stroke-width="1.6"/>
+<path d="M492,92.5 C520.0,92.5 520.0,161.0 548,161.0" fill="none" stroke="#B9B4AA" stroke-width="1.7"/>
+<rect x="8" y="52.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Chris Larsen</title></rect>
+<text x="18" y="76.5" font-size="12.5" fill="#141618">Chris Larsen</text>
+<rect x="8" y="106.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Tim Draper</title></rect>
+<text x="18" y="130.5" font-size="12.5" fill="#141618">Tim Draper</text>
+<rect x="8" y="160.0" width="204" height="46" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>California Apartment Association</title></rect>
+<text x="18" y="180.0" font-size="12.5" fill="#141618">California Apartment</text>
+<text x="18" y="195.0" font-size="12.5" fill="#141618">Association</text>
+<rect x="288" y="70.0" width="204" height="45" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Grow California &#8212; $1.1M in this race</title></rect>
+<text x="298" y="86.0" font-size="11.5" font-weight="600" fill="#141618">Grow California</text>
+<text class="num" x="298" y="108.0" font-size="11" fill="#8F7500">$1.1M in this race</text>
+<rect x="288" y="129.0" width="204" height="59" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Housing Providers for Responsible Solutions &#8212; $172K in this race</title></rect>
+<text x="298" y="145.0" font-size="11.5" font-weight="600" fill="#141618">Housing Providers for</text>
+<text x="298" y="159.0" font-size="11.5" font-weight="600" fill="#141618">Responsible Solutions</text>
+<text class="num" x="298" y="181.0" font-size="11" fill="#8F7500">$172K in this race</text>
+<rect x="548" y="72.0" width="204" height="50" rx="6" fill="#1E5FA8"><title>Oppose Jackie Elward &#8212; $925K</title></rect>
+<rect x="556" y="80.0" width="66" height="17" rx="8.5" fill="#FFFFFF"/><text x="589.0" y="92.5" font-size="9.5" font-weight="700" letter-spacing="1" fill="#BF0316" text-anchor="middle">OPPOSE</text>
+<text class="num" x="744" y="93.0" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="end">$925K</text>
+<text x="558" y="111.0" font-size="13.5" font-weight="600" fill="#FFFFFF">Jackie Elward</text>
+<rect x="548" y="136.0" width="204" height="50" rx="6" fill="#1E5FA8"><title>Support Eric Lucan &#8212; $307K</title></rect>
+<rect x="556" y="144.0" width="74" height="17" rx="8.5" fill="#FFFFFF"/><text x="593.0" y="156.5" font-size="9.5" font-weight="700" letter-spacing="1" fill="#141618" text-anchor="middle">SUPPORT</text>
+<text class="num" x="744" y="157.0" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="end">$307K</text>
+<text x="558" y="175.0" font-size="13.5" font-weight="600" fill="#FFFFFF">Eric Lucan</text>
+<rect x="8" y="227" width="14" height="14" rx="3" fill="#1E5FA8"/><text x="28" y="238" font-size="11.5" fill="#777777">Democrat</text><rect x="108" y="227" width="14" height="14" rx="3" fill="#BF0316"/><text x="128" y="238" font-size="11.5" fill="#777777">Republican</text><text x="226" y="238" font-size="11.5" fill="#777777">SUPPORT / OPPOSE tags show where the money aimed. Line weight scales with dollars.</text>
 </svg><figcaption>How the money moved in Assembly District 12: top PAC donors, the PACs they fund, and the independent expenditures those PACs made for or against candidates.</figcaption></figure>
 <figure><svg class="chart results" viewBox="0 0 720 184" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Election results">
 <style>.results text{font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;} .results .num{font-family:'IBM Plex Mono',ui-monospace,monospace;}</style>
@@ -885,84 +913,86 @@ ol.ranked{list-style:none;counter-reset:rk 4;padding:0;margin:26px 0}
 <p>Meta and Google each gave <span class="m">$5 million</span> to the <strong>California Leads</strong> PAC, which spent <span class="m">$1 million</span> in independent expenditures for Davis.</p>
 <p><strong>JobsPAC</strong> spent <span class="m">$292,000</span> in independent expenditures opposing Iqbal-Zubair.</p>
 <p>See Appendix for additional races</p>
-<figure><svg class="chart network" viewBox="0 0 760 636" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Money flow network">
+<figure><svg class="chart network" viewBox="0 0 760 628" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Money flow network">
 <style>.network text{font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;} .network .num{font-family:'IBM Plex Mono',ui-monospace,monospace;}</style>
 <text x="8" y="24" font-size="11" font-weight="700" letter-spacing="1.5" fill="#777777">TOP PAC DONORS</text>
 <text x="288" y="24" font-size="11" font-weight="700" letter-spacing="1.5" fill="#777777">PACs</text>
 <text x="548" y="24" font-size="11" font-weight="700" letter-spacing="1.5" fill="#777777">INDEPENDENT EXPENDITURES</text>
-<path d="M212,74.0 C250.0,74.0 250.0,161.0 288,161.0" fill="none" stroke="#C9C4BA" stroke-width="4.5"/>
-<path d="M212,132.0 C250.0,132.0 250.0,161.0 288,161.0" fill="none" stroke="#C9C4BA" stroke-width="2.2"/>
-<path d="M212,190.0 C250.0,190.0 250.0,219.0 288,219.0" fill="none" stroke="#C9C4BA" stroke-width="2.2"/>
-<path d="M212,248.0 C250.0,248.0 250.0,219.0 288,219.0" fill="none" stroke="#C9C4BA" stroke-width="2.2"/>
-<path d="M212,306.0 C250.0,306.0 250.0,277.0 288,277.0" fill="none" stroke="#C9C4BA" stroke-width="1.1"/>
-<path d="M212,364.0 C250.0,364.0 250.0,277.0 288,277.0" fill="none" stroke="#C9C4BA" stroke-width="1.1"/>
-<path d="M212,422.0 C250.0,422.0 250.0,277.0 288,277.0" fill="none" stroke="#C9C4BA" stroke-width="1.1"/>
-<path d="M212,480.0 C250.0,480.0 250.0,277.0 288,277.0" fill="none" stroke="#C9C4BA" stroke-width="1.1"/>
-<path d="M212,422.0 C250.0,422.0 250.0,335.0 288,335.0" fill="none" stroke="#C9C4BA" stroke-width="1.6"/>
-<path d="M212,538.0 C250.0,538.0 250.0,335.0 288,335.0" fill="none" stroke="#C9C4BA" stroke-width="1.6"/>
-<path d="M212,596.0 C250.0,596.0 250.0,335.0 288,335.0" fill="none" stroke="#C9C4BA" stroke-width="1.5"/>
-<path d="M212,190.0 C250.0,190.0 250.0,335.0 288,335.0" fill="none" stroke="#C9C4BA" stroke-width="1.5"/>
-<path d="M492,335.0 C520.0,335.0 520.0,364.0 548,364.0" fill="none" stroke="#BF0316" stroke-opacity="0.45" stroke-width="1.4"/>
-<path d="M492,161.0 C520.0,161.0 520.0,364.0 548,364.0" fill="none" stroke="#BF0316" stroke-opacity="0.45" stroke-width="1.7"/>
-<path d="M492,277.0 C520.0,277.0 520.0,364.0 548,364.0" fill="none" stroke="#BF0316" stroke-opacity="0.45" stroke-width="1.3"/>
-<path d="M492,219.0 C520.0,219.0 520.0,306.0 548,306.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="2.0"/>
-<path d="M492,161.0 C520.0,161.0 520.0,306.0 548,306.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="2.4"/>
-<path d="M492,277.0 C520.0,277.0 520.0,306.0 548,306.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="1.4"/>
-<path d="M492,393.0 C520.0,393.0 520.0,306.0 548,306.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="1.4"/>
-<path d="M492,509.0 C520.0,509.0 520.0,306.0 548,306.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="1.3"/>
-<path d="M492,451.0 C520.0,451.0 520.0,306.0 548,306.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="1.4"/>
-<rect x="8" y="52.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="79.0" font-size="12.5" fill="#141618">Chris Larsen</text>
-<rect x="8" y="110.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="137.0" font-size="12.5" fill="#141618">Tim Daper</text>
-<rect x="8" y="168.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="195.0" font-size="12.5" fill="#141618">Meta</text>
-<rect x="8" y="226.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="253.0" font-size="12.5" fill="#141618">Google</text>
-<rect x="8" y="284.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="303.0" font-size="12" fill="#141618">CAlifornia Apartment</text>
-<text x="18" y="318.0" font-size="12" fill="#141618">Association</text>
-<rect x="8" y="342.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="369.0" font-size="12.5" fill="#141618">DaVita</text>
-<rect x="8" y="400.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="427.0" font-size="12.5" fill="#141618">PG&amp;E</text>
-<rect x="8" y="458.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="485.0" font-size="12.5" fill="#141618">Uber</text>
-<rect x="8" y="516.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="543.0" font-size="12.5" fill="#141618">Sempra Energy</text>
-<rect x="8" y="574.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="601.0" font-size="12.5" fill="#141618">Sergey Brin, Google</text>
-<rect x="288" y="139.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="159.0" font-size="12.5" font-weight="600" fill="#141618">Grow California</text>
-<text class="num" x="298" y="177.0" font-size="11" fill="#8F7500">$2M in this race</text>
-<rect x="288" y="197.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="217.0" font-size="12.5" font-weight="600" fill="#141618">California Leads</text>
-<text class="num" x="298" y="235.0" font-size="11" fill="#8F7500">$1M in this race</text>
-<rect x="288" y="255.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="275.0" font-size="12.5" font-weight="600" fill="#141618">Keep California Golden</text>
-<text class="num" x="298" y="293.0" font-size="11" fill="#8F7500">$329K in this race</text>
-<rect x="288" y="313.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="333.0" font-size="12.5" font-weight="600" fill="#141618">JobsPAC</text>
-<text class="num" x="298" y="351.0" font-size="11" fill="#8F7500">$291K in this race</text>
-<rect x="288" y="371.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="387.0" font-size="11.5" font-weight="600" fill="#141618">California Apartment</text>
-<text x="298" y="399.0" font-size="11.5" font-weight="600" fill="#141618">Association’s Advance…</text>
-<text class="num" x="298" y="409.0" font-size="11" fill="#8F7500">$280K in this race</text>
-<rect x="288" y="429.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="449.0" font-size="12.5" font-weight="600" fill="#141618">Davita</text>
-<text class="num" x="298" y="467.0" font-size="11" fill="#8F7500">$242K in this race</text>
-<rect x="288" y="487.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="503.0" font-size="11.5" font-weight="600" fill="#141618">Charter School Assoc</text>
-<text x="298" y="515.0" font-size="11.5" font-weight="600" fill="#141618">Advocates</text>
-<text class="num" x="298" y="525.0" font-size="11" fill="#8F7500">$77K in this race</text>
-<rect x="548" y="284.0" width="204" height="44" rx="6" fill="#141618"/>
-<text x="558" y="301.0" font-size="9.5" font-weight="700" letter-spacing="1" fill="#FFFFFF" fill-opacity="0.75">SUPPORT</text>
-<text x="558" y="317.0" font-size="13" font-weight="600" fill="#FFFFFF">Ayanna Davis</text>
-<text class="num" x="744" y="301.0" font-size="11" fill="#FFFFFF" text-anchor="end">$3.2M</text>
-<rect x="548" y="342.0" width="204" height="44" rx="6" fill="#BF0316"/>
-<text x="558" y="359.0" font-size="9.5" font-weight="700" letter-spacing="1" fill="#FFFFFF" fill-opacity="0.75">OPPOSE</text>
-<text x="558" y="375.0" font-size="13" font-weight="600" fill="#FFFFFF">Fatima Iqbal-zubair</text>
-<text class="num" x="744" y="359.0" font-size="11" fill="#FFFFFF" text-anchor="end">$1.1M</text>
+<path d="M212,72.0 C250.0,72.0 250.0,120.0 288,120.0" fill="none" stroke="#B9B4AA" stroke-width="4.5"/>
+<path d="M212,126.0 C250.0,126.0 250.0,120.0 288,120.0" fill="none" stroke="#B9B4AA" stroke-width="2.2"/>
+<path d="M212,180.0 C250.0,180.0 250.0,179.0 288,179.0" fill="none" stroke="#B9B4AA" stroke-width="2.2"/>
+<path d="M212,234.0 C250.0,234.0 250.0,179.0 288,179.0" fill="none" stroke="#B9B4AA" stroke-width="2.2"/>
+<path d="M212,291.0 C250.0,291.0 250.0,238.0 288,238.0" fill="none" stroke="#B9B4AA" stroke-width="1.1"/>
+<path d="M212,348.0 C250.0,348.0 250.0,238.0 288,238.0" fill="none" stroke="#B9B4AA" stroke-width="1.1"/>
+<path d="M212,402.0 C250.0,402.0 250.0,238.0 288,238.0" fill="none" stroke="#B9B4AA" stroke-width="1.1"/>
+<path d="M212,456.0 C250.0,456.0 250.0,238.0 288,238.0" fill="none" stroke="#B9B4AA" stroke-width="1.1"/>
+<path d="M212,402.0 C250.0,402.0 250.0,297.0 288,297.0" fill="none" stroke="#B9B4AA" stroke-width="1.6"/>
+<path d="M212,510.0 C250.0,510.0 250.0,297.0 288,297.0" fill="none" stroke="#B9B4AA" stroke-width="1.6"/>
+<path d="M212,564.0 C250.0,564.0 250.0,297.0 288,297.0" fill="none" stroke="#B9B4AA" stroke-width="1.5"/>
+<path d="M212,180.0 C250.0,180.0 250.0,297.0 288,297.0" fill="none" stroke="#B9B4AA" stroke-width="1.5"/>
+<path d="M492,297.0 C520.0,297.0 520.0,350.0 548,350.0" fill="none" stroke="#B9B4AA" stroke-width="1.7"/>
+<path d="M492,120.0 C520.0,120.0 520.0,350.0 548,350.0" fill="none" stroke="#B9B4AA" stroke-width="2.0"/>
+<path d="M492,238.0 C520.0,238.0 520.0,350.0 548,350.0" fill="none" stroke="#B9B4AA" stroke-width="1.5"/>
+<path d="M492,179.0 C520.0,179.0 520.0,286.0 548,286.0" fill="none" stroke="#B9B4AA" stroke-width="2.4"/>
+<path d="M492,120.0 C520.0,120.0 520.0,286.0 548,286.0" fill="none" stroke="#B9B4AA" stroke-width="2.8"/>
+<path d="M492,238.0 C520.0,238.0 520.0,286.0 548,286.0" fill="none" stroke="#B9B4AA" stroke-width="1.6"/>
+<path d="M492,370.0 C520.0,370.0 520.0,286.0 548,286.0" fill="none" stroke="#B9B4AA" stroke-width="1.7"/>
+<path d="M492,509.0 C520.0,509.0 520.0,286.0 548,286.0" fill="none" stroke="#B9B4AA" stroke-width="1.5"/>
+<path d="M492,443.0 C520.0,443.0 520.0,286.0 548,286.0" fill="none" stroke="#B9B4AA" stroke-width="1.6"/>
+<rect x="8" y="52.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Chris Larsen</title></rect>
+<text x="18" y="76.5" font-size="12.5" fill="#141618">Chris Larsen</text>
+<rect x="8" y="106.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Tim Draper</title></rect>
+<text x="18" y="130.5" font-size="12.5" fill="#141618">Tim Draper</text>
+<rect x="8" y="160.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Meta</title></rect>
+<text x="18" y="184.5" font-size="12.5" fill="#141618">Meta</text>
+<rect x="8" y="214.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Google</title></rect>
+<text x="18" y="238.5" font-size="12.5" fill="#141618">Google</text>
+<rect x="8" y="268.0" width="204" height="46" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>California Apartment Association</title></rect>
+<text x="18" y="288.0" font-size="12.5" fill="#141618">California Apartment</text>
+<text x="18" y="303.0" font-size="12.5" fill="#141618">Association</text>
+<rect x="8" y="328.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>DaVita</title></rect>
+<text x="18" y="352.5" font-size="12.5" fill="#141618">DaVita</text>
+<rect x="8" y="382.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>PG&amp;E</title></rect>
+<text x="18" y="406.5" font-size="12.5" fill="#141618">PG&amp;E</text>
+<rect x="8" y="436.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Uber</title></rect>
+<text x="18" y="460.5" font-size="12.5" fill="#141618">Uber</text>
+<rect x="8" y="490.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Sempra Energy</title></rect>
+<text x="18" y="514.5" font-size="12.5" fill="#141618">Sempra Energy</text>
+<rect x="8" y="544.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Sergey Brin, Google</title></rect>
+<text x="18" y="568.5" font-size="12.5" fill="#141618">Sergey Brin, Google</text>
+<rect x="288" y="97.5" width="204" height="45" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Grow California &#8212; $2M in this race</title></rect>
+<text x="298" y="113.5" font-size="11.5" font-weight="600" fill="#141618">Grow California</text>
+<text class="num" x="298" y="135.5" font-size="11" fill="#8F7500">$2M in this race</text>
+<rect x="288" y="156.5" width="204" height="45" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>California Leads &#8212; $1M in this race</title></rect>
+<text x="298" y="172.5" font-size="11.5" font-weight="600" fill="#141618">California Leads</text>
+<text class="num" x="298" y="194.5" font-size="11" fill="#8F7500">$1M in this race</text>
+<rect x="288" y="215.5" width="204" height="45" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Keep California Golden &#8212; $329K in this race</title></rect>
+<text x="298" y="231.5" font-size="11.5" font-weight="600" fill="#141618">Keep California Golden</text>
+<text class="num" x="298" y="253.5" font-size="11" fill="#8F7500">$329K in this race</text>
+<rect x="288" y="274.5" width="204" height="45" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>JobsPAC &#8212; $291K in this race</title></rect>
+<text x="298" y="290.5" font-size="11.5" font-weight="600" fill="#141618">JobsPAC</text>
+<text class="num" x="298" y="312.5" font-size="11" fill="#8F7500">$291K in this race</text>
+<rect x="288" y="333.5" width="204" height="73" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>California Apartment Association’s Advance California &#8212; $280K in this race</title></rect>
+<text x="298" y="349.5" font-size="11.5" font-weight="600" fill="#141618">California Apartment</text>
+<text x="298" y="363.5" font-size="11.5" font-weight="600" fill="#141618">Association’s Advance</text>
+<text x="298" y="377.5" font-size="11.5" font-weight="600" fill="#141618">California</text>
+<text class="num" x="298" y="399.5" font-size="11" fill="#8F7500">$280K in this race</text>
+<rect x="288" y="420.5" width="204" height="45" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>DaVita &#8212; $242K in this race</title></rect>
+<text x="298" y="436.5" font-size="11.5" font-weight="600" fill="#141618">DaVita</text>
+<text class="num" x="298" y="458.5" font-size="11" fill="#8F7500">$242K in this race</text>
+<rect x="288" y="479.5" width="204" height="59" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Charter School Assoc Advocates &#8212; $77K in this race</title></rect>
+<text x="298" y="495.5" font-size="11.5" font-weight="600" fill="#141618">Charter School Assoc</text>
+<text x="298" y="509.5" font-size="11.5" font-weight="600" fill="#141618">Advocates</text>
+<text class="num" x="298" y="531.5" font-size="11" fill="#8F7500">$77K in this race</text>
+<rect x="548" y="261.0" width="204" height="50" rx="6" fill="#1E5FA8"><title>Support Ayanna Davis &#8212; $3.2M</title></rect>
+<rect x="556" y="269.0" width="74" height="17" rx="8.5" fill="#FFFFFF"/><text x="593.0" y="281.5" font-size="9.5" font-weight="700" letter-spacing="1" fill="#141618" text-anchor="middle">SUPPORT</text>
+<text class="num" x="744" y="282.0" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="end">$3.2M</text>
+<text x="558" y="300.0" font-size="13.5" font-weight="600" fill="#FFFFFF">Ayanna Davis</text>
+<rect x="548" y="325.0" width="204" height="50" rx="6" fill="#1E5FA8"><title>Oppose Fatima Iqbal-Zubair &#8212; $1.1M</title></rect>
+<rect x="556" y="333.0" width="66" height="17" rx="8.5" fill="#FFFFFF"/><text x="589.0" y="345.5" font-size="9.5" font-weight="700" letter-spacing="1" fill="#BF0316" text-anchor="middle">OPPOSE</text>
+<text class="num" x="744" y="346.0" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="end">$1.1M</text>
+<text x="558" y="364.0" font-size="13.5" font-weight="600" fill="#FFFFFF">Fatima Iqbal-Zubair</text>
+<rect x="8" y="605" width="14" height="14" rx="3" fill="#1E5FA8"/><text x="28" y="616" font-size="11.5" fill="#777777">Democrat</text><rect x="108" y="605" width="14" height="14" rx="3" fill="#BF0316"/><text x="128" y="616" font-size="11.5" fill="#777777">Republican</text><text x="226" y="616" font-size="11.5" fill="#777777">SUPPORT / OPPOSE tags show where the money aimed. Line weight scales with dollars.</text>
 </svg><figcaption>How the money moved in Assembly District 65: top PAC donors, the PACs they fund, and the independent expenditures those PACs made for or against candidates.</figcaption></figure>
 <figure><svg class="chart results" viewBox="0 0 720 184" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Election results">
 <style>.results text{font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;} .results .num{font-family:'IBM Plex Mono',ui-monospace,monospace;}</style>
@@ -978,7 +1008,7 @@ ol.ranked{list-style:none;counter-reset:rk 4;padding:0;margin:26px 0}
 <rect x="210" y="74" width="149.3" height="24" rx="4" fill="#BF0316"/>
 <text class="num" x="582" y="88" font-size="14" font-weight="600" fill="#141618">19.2%</text>
 <text class="num" x="582" y="103" font-size="11" fill="#777777">13,940 votes</text>
-<text x="0" y="142" font-size="15" font-weight="600" fill="#141618">Fatima Iqbal_Zubair</text>
+<text x="0" y="142" font-size="15" font-weight="600" fill="#141618">Fatima Iqbal-Zubair</text>
 <text x="0" y="158" font-size="11" fill="#777777">Democrat</text>
 <rect x="210" y="126" width="360" height="24" rx="4" fill="#E9E7E2"/>
 <rect x="210" y="126" width="140.7" height="24" rx="4" fill="#1E5FA8"/>
@@ -993,74 +1023,78 @@ ol.ranked{list-style:none;counter-reset:rk 4;padding:0;margin:26px 0}
 <p>Meta’s PAC <strong>Mobilizing Economic Transformation Across (META) California</strong> spent <span class="m">$1.3 million</span> on mailers and digital ads supporting Sakahira.</p>
 <p><strong>Grow California</strong>, the PAC founded by crypto billionaires Chris Larsen and Tim Draper, spent over <span class="m">$1 million</span> on ads, consulting, and research for Sakakihara. Meta bought mailers and digital ads totaling over <span class="m">$966,000</span>. Larsen and Draper’s Grow California PAC spent over <span class="m">$1 million</span> in ads, consulting, and research.<sup class="fnref"><a id="fnref39" href="#fn39">39</a></sup></p>
 <p><strong>JobsPAC</strong> spent <span class="m">$294,000</span> in independent expenditures opposing another candidate <strong>Anne Kepner</strong>, an attorney who has represented consumers against large corporations. “My interpretation is, by the millions being spent trying to buy this seat, that I’m perceived as a threat,” Kepner said. “That’s exactly the problem, and the reason I’m running,” she stated, adding “sometimes I think we’re defined by our enemies.”<sup class="fnref"><a id="fnref40" href="#fn40">40</a></sup></p>
-<figure><svg class="chart network" viewBox="0 0 760 578" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Money flow network">
+<figure><svg class="chart network" viewBox="0 0 760 574" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Money flow network">
 <style>.network text{font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;} .network .num{font-family:'IBM Plex Mono',ui-monospace,monospace;}</style>
 <text x="8" y="24" font-size="11" font-weight="700" letter-spacing="1.5" fill="#777777">TOP PAC DONORS</text>
 <text x="288" y="24" font-size="11" font-weight="700" letter-spacing="1.5" fill="#777777">PACs</text>
 <text x="548" y="24" font-size="11" font-weight="700" letter-spacing="1.5" fill="#777777">INDEPENDENT EXPENDITURES</text>
-<path d="M212,74.0 C250.0,74.0 250.0,219.0 288,219.0" fill="none" stroke="#C9C4BA" stroke-width="4.5"/>
-<path d="M212,132.0 C250.0,132.0 250.0,219.0 288,219.0" fill="none" stroke="#C9C4BA" stroke-width="2.2"/>
-<path d="M212,190.0 C250.0,190.0 250.0,335.0 288,335.0" fill="none" stroke="#C9C4BA" stroke-width="1.1"/>
-<path d="M212,248.0 C250.0,248.0 250.0,335.0 288,335.0" fill="none" stroke="#C9C4BA" stroke-width="1.1"/>
-<path d="M212,306.0 C250.0,306.0 250.0,335.0 288,335.0" fill="none" stroke="#C9C4BA" stroke-width="1.1"/>
-<path d="M212,364.0 C250.0,364.0 250.0,335.0 288,335.0" fill="none" stroke="#C9C4BA" stroke-width="1.1"/>
-<path d="M212,306.0 C250.0,306.0 250.0,393.0 288,393.0" fill="none" stroke="#C9C4BA" stroke-width="1.6"/>
-<path d="M212,422.0 C250.0,422.0 250.0,393.0 288,393.0" fill="none" stroke="#C9C4BA" stroke-width="1.6"/>
-<path d="M212,480.0 C250.0,480.0 250.0,393.0 288,393.0" fill="none" stroke="#C9C4BA" stroke-width="1.5"/>
-<path d="M212,538.0 C250.0,538.0 250.0,393.0 288,393.0" fill="none" stroke="#C9C4BA" stroke-width="1.5"/>
-<path d="M492,393.0 C520.0,393.0 520.0,335.0 548,335.0" fill="none" stroke="#BF0316" stroke-opacity="0.45" stroke-width="1.4"/>
-<path d="M492,161.0 C520.0,161.0 520.0,277.0 548,277.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="2.3"/>
-<path d="M492,219.0 C520.0,219.0 520.0,277.0 548,277.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="2.0"/>
-<path d="M492,277.0 C520.0,277.0 520.0,277.0 548,277.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="2.0"/>
-<path d="M492,335.0 C520.0,335.0 520.0,277.0 548,277.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="1.5"/>
-<path d="M492,451.0 C520.0,451.0 520.0,277.0 548,277.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="1.4"/>
-<rect x="8" y="52.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="79.0" font-size="12.5" fill="#141618">Chris Larsen</text>
-<rect x="8" y="110.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="137.0" font-size="12.5" fill="#141618">Tim Daper</text>
-<rect x="8" y="168.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="187.0" font-size="12" fill="#141618">CAlifornia Apartment</text>
-<text x="18" y="202.0" font-size="12" fill="#141618">Association</text>
-<rect x="8" y="226.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="253.0" font-size="12.5" fill="#141618">DaVita</text>
-<rect x="8" y="284.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="311.0" font-size="12.5" fill="#141618">PG&amp;E</text>
-<rect x="8" y="342.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="369.0" font-size="12.5" fill="#141618">Uber</text>
-<rect x="8" y="400.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="427.0" font-size="12.5" fill="#141618">Sempra Energy</text>
-<rect x="8" y="458.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="485.0" font-size="12.5" fill="#141618">Sergey Brin, Google</text>
-<rect x="8" y="516.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="543.0" font-size="12.5" fill="#141618">Meta</text>
-<rect x="288" y="139.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="155.0" font-size="11.5" font-weight="600" fill="#141618">Meta (Mobilizing</text>
-<text x="298" y="167.0" font-size="11.5" font-weight="600" fill="#141618">Economic Transformati…</text>
-<text class="num" x="298" y="177.0" font-size="11" fill="#8F7500">$1.3M in this race</text>
-<rect x="288" y="197.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="217.0" font-size="12.5" font-weight="600" fill="#141618">Grow California</text>
-<text class="num" x="298" y="235.0" font-size="11" fill="#8F7500">$1M in this race</text>
-<rect x="288" y="255.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="275.0" font-size="12.5" font-weight="600" fill="#141618">Uber&#x27;s PAC</text>
-<text class="num" x="298" y="293.0" font-size="11" fill="#8F7500">$1M in this race</text>
-<rect x="288" y="313.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="333.0" font-size="12.5" font-weight="600" fill="#141618">Keep California Golden</text>
-<text class="num" x="298" y="351.0" font-size="11" fill="#8F7500">$312K in this race</text>
-<rect x="288" y="371.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="391.0" font-size="12.5" font-weight="600" fill="#141618">JobsPAC</text>
-<text class="num" x="298" y="409.0" font-size="11" fill="#8F7500">$294K in this race</text>
-<rect x="288" y="429.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="445.0" font-size="11.5" font-weight="600" fill="#141618">California Apartment</text>
-<text x="298" y="457.0" font-size="11.5" font-weight="600" fill="#141618">Association’s Advance…</text>
-<text class="num" x="298" y="467.0" font-size="11" fill="#8F7500">$274K in this race</text>
-<rect x="548" y="255.0" width="204" height="44" rx="6" fill="#141618"/>
-<text x="558" y="272.0" font-size="9.5" font-weight="700" letter-spacing="1" fill="#FFFFFF" fill-opacity="0.75">SUPPORT</text>
-<text x="558" y="288.0" font-size="13" font-weight="600" fill="#FFFFFF">Scott Sakakihara</text>
-<text class="num" x="744" y="272.0" font-size="11" fill="#FFFFFF" text-anchor="end">$3.9M</text>
-<rect x="548" y="313.0" width="204" height="44" rx="6" fill="#BF0316"/>
-<text x="558" y="330.0" font-size="9.5" font-weight="700" letter-spacing="1" fill="#FFFFFF" fill-opacity="0.75">OPPOSE</text>
-<text x="558" y="346.0" font-size="13" font-weight="600" fill="#FFFFFF">Ann Kepner</text>
-<text class="num" x="744" y="330.0" font-size="11" fill="#FFFFFF" text-anchor="end">$294K</text>
+<path d="M212,72.0 C250.0,72.0 250.0,209.5 288,209.5" fill="none" stroke="#B9B4AA" stroke-width="4.5"/>
+<path d="M212,126.0 C250.0,126.0 250.0,209.5 288,209.5" fill="none" stroke="#B9B4AA" stroke-width="2.2"/>
+<path d="M212,183.0 C250.0,183.0 250.0,327.5 288,327.5" fill="none" stroke="#B9B4AA" stroke-width="1.1"/>
+<path d="M212,240.0 C250.0,240.0 250.0,327.5 288,327.5" fill="none" stroke="#B9B4AA" stroke-width="1.1"/>
+<path d="M212,294.0 C250.0,294.0 250.0,327.5 288,327.5" fill="none" stroke="#B9B4AA" stroke-width="1.1"/>
+<path d="M212,348.0 C250.0,348.0 250.0,327.5 288,327.5" fill="none" stroke="#B9B4AA" stroke-width="1.1"/>
+<path d="M212,294.0 C250.0,294.0 250.0,386.5 288,386.5" fill="none" stroke="#B9B4AA" stroke-width="1.6"/>
+<path d="M212,402.0 C250.0,402.0 250.0,386.5 288,386.5" fill="none" stroke="#B9B4AA" stroke-width="1.6"/>
+<path d="M212,456.0 C250.0,456.0 250.0,386.5 288,386.5" fill="none" stroke="#B9B4AA" stroke-width="1.5"/>
+<path d="M212,510.0 C250.0,510.0 250.0,386.5 288,386.5" fill="none" stroke="#B9B4AA" stroke-width="1.5"/>
+<path d="M492,386.5 C520.0,386.5 520.0,323.0 548,323.0" fill="none" stroke="#B9B4AA" stroke-width="1.7"/>
+<path d="M492,129.5 C520.0,129.5 520.0,259.0 548,259.0" fill="none" stroke="#B9B4AA" stroke-width="2.7"/>
+<path d="M492,209.5 C520.0,209.5 520.0,259.0 548,259.0" fill="none" stroke="#B9B4AA" stroke-width="2.4"/>
+<path d="M492,268.5 C520.0,268.5 520.0,259.0 548,259.0" fill="none" stroke="#B9B4AA" stroke-width="2.4"/>
+<path d="M492,327.5 C520.0,327.5 520.0,259.0 548,259.0" fill="none" stroke="#B9B4AA" stroke-width="1.7"/>
+<path d="M492,459.5 C520.0,459.5 520.0,259.0 548,259.0" fill="none" stroke="#B9B4AA" stroke-width="1.7"/>
+<rect x="8" y="52.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Chris Larsen</title></rect>
+<text x="18" y="76.5" font-size="12.5" fill="#141618">Chris Larsen</text>
+<rect x="8" y="106.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Tim Draper</title></rect>
+<text x="18" y="130.5" font-size="12.5" fill="#141618">Tim Draper</text>
+<rect x="8" y="160.0" width="204" height="46" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>California Apartment Association</title></rect>
+<text x="18" y="180.0" font-size="12.5" fill="#141618">California Apartment</text>
+<text x="18" y="195.0" font-size="12.5" fill="#141618">Association</text>
+<rect x="8" y="220.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>DaVita</title></rect>
+<text x="18" y="244.5" font-size="12.5" fill="#141618">DaVita</text>
+<rect x="8" y="274.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>PG&amp;E</title></rect>
+<text x="18" y="298.5" font-size="12.5" fill="#141618">PG&amp;E</text>
+<rect x="8" y="328.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Uber</title></rect>
+<text x="18" y="352.5" font-size="12.5" fill="#141618">Uber</text>
+<rect x="8" y="382.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Sempra Energy</title></rect>
+<text x="18" y="406.5" font-size="12.5" fill="#141618">Sempra Energy</text>
+<rect x="8" y="436.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Sergey Brin, Google</title></rect>
+<text x="18" y="460.5" font-size="12.5" fill="#141618">Sergey Brin, Google</text>
+<rect x="8" y="490.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Meta</title></rect>
+<text x="18" y="514.5" font-size="12.5" fill="#141618">Meta</text>
+<rect x="288" y="86.0" width="204" height="87" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Meta (Mobilizing Economic Transformation Across [META] California) &#8212; $1.3M in this race</title></rect>
+<text x="298" y="102.0" font-size="11.5" font-weight="600" fill="#141618">Meta (Mobilizing</text>
+<text x="298" y="116.0" font-size="11.5" font-weight="600" fill="#141618">Economic Transformation</text>
+<text x="298" y="130.0" font-size="11.5" font-weight="600" fill="#141618">Across [META]</text>
+<text x="298" y="144.0" font-size="11.5" font-weight="600" fill="#141618">California)</text>
+<text class="num" x="298" y="166.0" font-size="11" fill="#8F7500">$1.3M in this race</text>
+<rect x="288" y="187.0" width="204" height="45" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Grow California &#8212; $1M in this race</title></rect>
+<text x="298" y="203.0" font-size="11.5" font-weight="600" fill="#141618">Grow California</text>
+<text class="num" x="298" y="225.0" font-size="11" fill="#8F7500">$1M in this race</text>
+<rect x="288" y="246.0" width="204" height="45" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Uber&#x27;s PAC &#8212; $1M in this race</title></rect>
+<text x="298" y="262.0" font-size="11.5" font-weight="600" fill="#141618">Uber&#x27;s PAC</text>
+<text class="num" x="298" y="284.0" font-size="11" fill="#8F7500">$1M in this race</text>
+<rect x="288" y="305.0" width="204" height="45" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Keep California Golden &#8212; $312K in this race</title></rect>
+<text x="298" y="321.0" font-size="11.5" font-weight="600" fill="#141618">Keep California Golden</text>
+<text class="num" x="298" y="343.0" font-size="11" fill="#8F7500">$312K in this race</text>
+<rect x="288" y="364.0" width="204" height="45" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>JobsPAC &#8212; $294K in this race</title></rect>
+<text x="298" y="380.0" font-size="11.5" font-weight="600" fill="#141618">JobsPAC</text>
+<text class="num" x="298" y="402.0" font-size="11" fill="#8F7500">$294K in this race</text>
+<rect x="288" y="423.0" width="204" height="73" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>California Apartment Association’s Advance California &#8212; $274K in this race</title></rect>
+<text x="298" y="439.0" font-size="11.5" font-weight="600" fill="#141618">California Apartment</text>
+<text x="298" y="453.0" font-size="11.5" font-weight="600" fill="#141618">Association’s Advance</text>
+<text x="298" y="467.0" font-size="11.5" font-weight="600" fill="#141618">California</text>
+<text class="num" x="298" y="489.0" font-size="11" fill="#8F7500">$274K in this race</text>
+<rect x="548" y="234.0" width="204" height="50" rx="6" fill="#1E5FA8"><title>Support Scott Sakakihara &#8212; $3.9M</title></rect>
+<rect x="556" y="242.0" width="74" height="17" rx="8.5" fill="#FFFFFF"/><text x="593.0" y="254.5" font-size="9.5" font-weight="700" letter-spacing="1" fill="#141618" text-anchor="middle">SUPPORT</text>
+<text class="num" x="744" y="255.0" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="end">$3.9M</text>
+<text x="558" y="273.0" font-size="13.5" font-weight="600" fill="#FFFFFF">Scott Sakakihara</text>
+<rect x="548" y="298.0" width="204" height="50" rx="6" fill="#1E5FA8"><title>Oppose Anne Kepner &#8212; $294K</title></rect>
+<rect x="556" y="306.0" width="66" height="17" rx="8.5" fill="#FFFFFF"/><text x="589.0" y="318.5" font-size="9.5" font-weight="700" letter-spacing="1" fill="#BF0316" text-anchor="middle">OPPOSE</text>
+<text class="num" x="744" y="319.0" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="end">$294K</text>
+<text x="558" y="337.0" font-size="13.5" font-weight="600" fill="#FFFFFF">Anne Kepner</text>
+<rect x="8" y="551" width="14" height="14" rx="3" fill="#1E5FA8"/><text x="28" y="562" font-size="11.5" fill="#777777">Democrat</text><rect x="108" y="551" width="14" height="14" rx="3" fill="#BF0316"/><text x="128" y="562" font-size="11.5" fill="#777777">Republican</text><text x="226" y="562" font-size="11.5" fill="#777777">SUPPORT / OPPOSE tags show where the money aimed. Line weight scales with dollars.</text>
 </svg><figcaption>How the money moved in Senate District 10: top PAC donors, the PACs they fund, and the independent expenditures those PACs made for or against candidates.</figcaption></figure>
 <figure><svg class="chart results" viewBox="0 0 720 184" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Election results">
 <style>.results text{font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;} .results .num{font-family:'IBM Plex Mono',ui-monospace,monospace;}</style>
@@ -1087,70 +1121,72 @@ ol.ranked{list-style:none;counter-reset:rk 4;padding:0;margin:26px 0}
 <p>Los Angeles County</p>
 <p><strong>Grow California</strong>, the PAC founded by crypto billionaires Chris Larsen and Tim Draper, spent <span class="m">$2.2 million</span> to defeat West Hollywood City Councilmember <strong>John Erickson</strong>. Erickson, who received the most votesr in the primary, said, “The outcome of this election is a clear example of how dark money cannot buy elections.”<sup class="fnref"><a id="fnref41" href="#fn41">41</a></sup></p>
 <p><strong>JobsPAC</strong> spent <span class="m">$1.2 million</span> to beat <strong>Dr. Sion Roy.</strong> A statewide coalition of labor and Asian American and Pacific Islander advocacy groups criticized campaign mailers sent by the PAC as racially charged political attacks. The coalition said the mailers contained… a “racist dog whistle” by depicting Roy in ultra-high contrast imagery intended to darken his skin.<sup class="fnref"><a id="fnref42" href="#fn42">42</a></sup></p>
-<figure><svg class="chart network" viewBox="0 0 760 578" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Money flow network">
+<figure><svg class="chart network" viewBox="0 0 760 574" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Money flow network">
 <style>.network text{font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;} .network .num{font-family:'IBM Plex Mono',ui-monospace,monospace;}</style>
 <text x="8" y="24" font-size="11" font-weight="700" letter-spacing="1.5" fill="#777777">TOP PAC DONORS</text>
 <text x="288" y="24" font-size="11" font-weight="700" letter-spacing="1.5" fill="#777777">PACs</text>
 <text x="548" y="24" font-size="11" font-weight="700" letter-spacing="1.5" fill="#777777">INDEPENDENT EXPENDITURES</text>
-<path d="M212,74.0 C250.0,74.0 250.0,219.0 288,219.0" fill="none" stroke="#C9C4BA" stroke-width="4.5"/>
-<path d="M212,132.0 C250.0,132.0 250.0,219.0 288,219.0" fill="none" stroke="#C9C4BA" stroke-width="2.2"/>
-<path d="M212,190.0 C250.0,190.0 250.0,277.0 288,277.0" fill="none" stroke="#C9C4BA" stroke-width="1.6"/>
-<path d="M212,248.0 C250.0,248.0 250.0,277.0 288,277.0" fill="none" stroke="#C9C4BA" stroke-width="1.6"/>
-<path d="M212,306.0 C250.0,306.0 250.0,277.0 288,277.0" fill="none" stroke="#C9C4BA" stroke-width="1.5"/>
-<path d="M212,364.0 C250.0,364.0 250.0,277.0 288,277.0" fill="none" stroke="#C9C4BA" stroke-width="1.5"/>
-<path d="M212,422.0 C250.0,422.0 250.0,393.0 288,393.0" fill="none" stroke="#C9C4BA" stroke-width="1.1"/>
-<path d="M212,480.0 C250.0,480.0 250.0,393.0 288,393.0" fill="none" stroke="#C9C4BA" stroke-width="1.1"/>
-<path d="M212,190.0 C250.0,190.0 250.0,393.0 288,393.0" fill="none" stroke="#C9C4BA" stroke-width="1.1"/>
-<path d="M212,538.0 C250.0,538.0 250.0,393.0 288,393.0" fill="none" stroke="#C9C4BA" stroke-width="1.1"/>
-<path d="M492,335.0 C520.0,335.0 520.0,364.0 548,364.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="1.3"/>
-<path d="M492,277.0 C520.0,277.0 520.0,306.0 548,306.0" fill="none" stroke="#BF0316" stroke-opacity="0.45" stroke-width="2.2"/>
-<path d="M492,335.0 C520.0,335.0 520.0,306.0 548,306.0" fill="none" stroke="#BF0316" stroke-opacity="0.45" stroke-width="1.9"/>
-<path d="M492,219.0 C520.0,219.0 520.0,248.0 548,248.0" fill="none" stroke="#BF0316" stroke-opacity="0.45" stroke-width="3.0"/>
-<path d="M492,393.0 C520.0,393.0 520.0,248.0 548,248.0" fill="none" stroke="#BF0316" stroke-opacity="0.45" stroke-width="1.7"/>
-<rect x="8" y="52.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="79.0" font-size="12.5" fill="#141618">Chris Larsen</text>
-<rect x="8" y="110.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="137.0" font-size="12.5" fill="#141618">Tim Daper</text>
-<rect x="8" y="168.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="195.0" font-size="12.5" fill="#141618">PG&amp;E</text>
-<rect x="8" y="226.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="253.0" font-size="12.5" fill="#141618">Sempra Energy</text>
-<rect x="8" y="284.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="311.0" font-size="12.5" fill="#141618">Sergey Brin, Google</text>
-<rect x="8" y="342.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="369.0" font-size="12.5" fill="#141618">Meta</text>
-<rect x="8" y="400.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="419.0" font-size="12" fill="#141618">CAlifornia Apartment</text>
-<text x="18" y="434.0" font-size="12" fill="#141618">Association</text>
-<rect x="8" y="458.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="485.0" font-size="12.5" fill="#141618">DaVita</text>
-<rect x="8" y="516.0" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#D8D4CC"/>
-<text x="18" y="543.0" font-size="12.5" fill="#141618">Uber</text>
-<rect x="288" y="197.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="217.0" font-size="12.5" font-weight="600" fill="#141618">Grow California</text>
-<text class="num" x="298" y="235.0" font-size="11" fill="#8F7500">$2.2M in this race</text>
-<rect x="288" y="255.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="275.0" font-size="12.5" font-weight="600" fill="#141618">JobsPAC</text>
-<text class="num" x="298" y="293.0" font-size="11" fill="#8F7500">$1.2M in this race</text>
-<rect x="288" y="313.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="329.0" font-size="11.5" font-weight="600" fill="#141618">California Apartment</text>
-<text x="298" y="341.0" font-size="11.5" font-weight="600" fill="#141618">Association’s Advance…</text>
-<text class="num" x="298" y="351.0" font-size="11" fill="#8F7500">$974K in this race</text>
-<rect x="288" y="371.0" width="204" height="44" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="298" y="391.0" font-size="12.5" font-weight="600" fill="#141618">Keep California Golden</text>
+<path d="M212,72.0 C250.0,72.0 250.0,188.5 288,188.5" fill="none" stroke="#B9B4AA" stroke-width="4.5"/>
+<path d="M212,126.0 C250.0,126.0 250.0,188.5 288,188.5" fill="none" stroke="#B9B4AA" stroke-width="2.2"/>
+<path d="M212,180.0 C250.0,180.0 250.0,247.5 288,247.5" fill="none" stroke="#B9B4AA" stroke-width="1.6"/>
+<path d="M212,234.0 C250.0,234.0 250.0,247.5 288,247.5" fill="none" stroke="#B9B4AA" stroke-width="1.6"/>
+<path d="M212,288.0 C250.0,288.0 250.0,247.5 288,247.5" fill="none" stroke="#B9B4AA" stroke-width="1.5"/>
+<path d="M212,342.0 C250.0,342.0 250.0,247.5 288,247.5" fill="none" stroke="#B9B4AA" stroke-width="1.5"/>
+<path d="M212,399.0 C250.0,399.0 250.0,393.5 288,393.5" fill="none" stroke="#B9B4AA" stroke-width="1.1"/>
+<path d="M212,456.0 C250.0,456.0 250.0,393.5 288,393.5" fill="none" stroke="#B9B4AA" stroke-width="1.1"/>
+<path d="M212,180.0 C250.0,180.0 250.0,393.5 288,393.5" fill="none" stroke="#B9B4AA" stroke-width="1.1"/>
+<path d="M212,510.0 C250.0,510.0 250.0,393.5 288,393.5" fill="none" stroke="#B9B4AA" stroke-width="1.1"/>
+<path d="M492,320.5 C520.0,320.5 520.0,355.0 548,355.0" fill="none" stroke="#B9B4AA" stroke-width="1.5"/>
+<path d="M492,247.5 C520.0,247.5 520.0,291.0 548,291.0" fill="none" stroke="#B9B4AA" stroke-width="2.6"/>
+<path d="M492,320.5 C520.0,320.5 520.0,291.0 548,291.0" fill="none" stroke="#B9B4AA" stroke-width="2.3"/>
+<path d="M492,188.5 C520.0,188.5 520.0,227.0 548,227.0" fill="none" stroke="#B9B4AA" stroke-width="3.6"/>
+<path d="M492,393.5 C520.0,393.5 520.0,227.0 548,227.0" fill="none" stroke="#B9B4AA" stroke-width="2.0"/>
+<rect x="8" y="52.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Chris Larsen</title></rect>
+<text x="18" y="76.5" font-size="12.5" fill="#141618">Chris Larsen</text>
+<rect x="8" y="106.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Tim Draper</title></rect>
+<text x="18" y="130.5" font-size="12.5" fill="#141618">Tim Draper</text>
+<rect x="8" y="160.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>PG&amp;E</title></rect>
+<text x="18" y="184.5" font-size="12.5" fill="#141618">PG&amp;E</text>
+<rect x="8" y="214.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Sempra Energy</title></rect>
+<text x="18" y="238.5" font-size="12.5" fill="#141618">Sempra Energy</text>
+<rect x="8" y="268.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Sergey Brin, Google</title></rect>
+<text x="18" y="292.5" font-size="12.5" fill="#141618">Sergey Brin, Google</text>
+<rect x="8" y="322.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Meta</title></rect>
+<text x="18" y="346.5" font-size="12.5" fill="#141618">Meta</text>
+<rect x="8" y="376.0" width="204" height="46" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>California Apartment Association</title></rect>
+<text x="18" y="396.0" font-size="12.5" fill="#141618">California Apartment</text>
+<text x="18" y="411.0" font-size="12.5" fill="#141618">Association</text>
+<rect x="8" y="436.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>DaVita</title></rect>
+<text x="18" y="460.5" font-size="12.5" fill="#141618">DaVita</text>
+<rect x="8" y="490.0" width="204" height="40" rx="6" fill="#FFFFFF" stroke="#D8D4CC"><title>Uber</title></rect>
+<text x="18" y="514.5" font-size="12.5" fill="#141618">Uber</text>
+<rect x="288" y="166.0" width="204" height="45" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Grow California &#8212; $2.2M in this race</title></rect>
+<text x="298" y="182.0" font-size="11.5" font-weight="600" fill="#141618">Grow California</text>
+<text class="num" x="298" y="204.0" font-size="11" fill="#8F7500">$2.2M in this race</text>
+<rect x="288" y="225.0" width="204" height="45" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>JobsPAC &#8212; $1.2M in this race</title></rect>
+<text x="298" y="241.0" font-size="11.5" font-weight="600" fill="#141618">JobsPAC</text>
+<text class="num" x="298" y="263.0" font-size="11" fill="#8F7500">$1.2M in this race</text>
+<rect x="288" y="284.0" width="204" height="73" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>California Apartment Association’s Advance California &#8212; $974K in this race</title></rect>
+<text x="298" y="300.0" font-size="11.5" font-weight="600" fill="#141618">California Apartment</text>
+<text x="298" y="314.0" font-size="11.5" font-weight="600" fill="#141618">Association’s Advance</text>
+<text x="298" y="328.0" font-size="11.5" font-weight="600" fill="#141618">California</text>
+<text class="num" x="298" y="350.0" font-size="11" fill="#8F7500">$974K in this race</text>
+<rect x="288" y="371.0" width="204" height="45" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Keep California Golden &#8212; $561K in this race</title></rect>
+<text x="298" y="387.0" font-size="11.5" font-weight="600" fill="#141618">Keep California Golden</text>
 <text class="num" x="298" y="409.0" font-size="11" fill="#8F7500">$561K in this race</text>
-<rect x="548" y="226.0" width="204" height="44" rx="6" fill="#BF0316"/>
-<text x="558" y="243.0" font-size="9.5" font-weight="700" letter-spacing="1" fill="#FFFFFF" fill-opacity="0.75">OPPOSE</text>
-<text x="558" y="259.0" font-size="13" font-weight="600" fill="#FFFFFF">John Erickson</text>
-<text class="num" x="744" y="243.0" font-size="11" fill="#FFFFFF" text-anchor="end">$2.8M</text>
-<rect x="548" y="284.0" width="204" height="44" rx="6" fill="#BF0316"/>
-<text x="558" y="301.0" font-size="9.5" font-weight="700" letter-spacing="1" fill="#FFFFFF" fill-opacity="0.75">OPPOSE</text>
-<text x="558" y="317.0" font-size="13" font-weight="600" fill="#FFFFFF">Sion Roy</text>
-<text class="num" x="744" y="301.0" font-size="11" fill="#FFFFFF" text-anchor="end">$2.1M</text>
-<rect x="548" y="342.0" width="204" height="44" rx="6" fill="#141618"/>
-<text x="558" y="359.0" font-size="9.5" font-weight="700" letter-spacing="1" fill="#FFFFFF" fill-opacity="0.75">SUPPORT</text>
-<text x="558" y="375.0" font-size="13" font-weight="600" fill="#FFFFFF">Brian Goldsmith</text>
-<text class="num" x="744" y="359.0" font-size="11" fill="#FFFFFF" text-anchor="end">$104K</text>
+<rect x="548" y="202.0" width="204" height="50" rx="6" fill="#1E5FA8"><title>Oppose John Erickson &#8212; $2.8M</title></rect>
+<rect x="556" y="210.0" width="66" height="17" rx="8.5" fill="#FFFFFF"/><text x="589.0" y="222.5" font-size="9.5" font-weight="700" letter-spacing="1" fill="#BF0316" text-anchor="middle">OPPOSE</text>
+<text class="num" x="744" y="223.0" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="end">$2.8M</text>
+<text x="558" y="241.0" font-size="13.5" font-weight="600" fill="#FFFFFF">John Erickson</text>
+<rect x="548" y="266.0" width="204" height="50" rx="6" fill="#1E5FA8"><title>Oppose Sion Roy &#8212; $2.1M</title></rect>
+<rect x="556" y="274.0" width="66" height="17" rx="8.5" fill="#FFFFFF"/><text x="589.0" y="286.5" font-size="9.5" font-weight="700" letter-spacing="1" fill="#BF0316" text-anchor="middle">OPPOSE</text>
+<text class="num" x="744" y="287.0" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="end">$2.1M</text>
+<text x="558" y="305.0" font-size="13.5" font-weight="600" fill="#FFFFFF">Sion Roy</text>
+<rect x="548" y="330.0" width="204" height="50" rx="6" fill="#1E5FA8"><title>Support Brian Goldsmith &#8212; $104K</title></rect>
+<rect x="556" y="338.0" width="74" height="17" rx="8.5" fill="#FFFFFF"/><text x="593.0" y="350.5" font-size="9.5" font-weight="700" letter-spacing="1" fill="#141618" text-anchor="middle">SUPPORT</text>
+<text class="num" x="744" y="351.0" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="end">$104K</text>
+<text x="558" y="369.0" font-size="13.5" font-weight="600" fill="#FFFFFF">Brian Goldsmith</text>
+<rect x="8" y="551" width="14" height="14" rx="3" fill="#1E5FA8"/><text x="28" y="562" font-size="11.5" fill="#777777">Democrat</text><rect x="108" y="551" width="14" height="14" rx="3" fill="#BF0316"/><text x="128" y="562" font-size="11.5" fill="#777777">Republican</text><text x="226" y="562" font-size="11.5" fill="#777777">SUPPORT / OPPOSE tags show where the money aimed. Line weight scales with dollars.</text>
 </svg><figcaption>How the money moved in Senate District 24: top PAC donors, the PACs they fund, and the independent expenditures those PACs made for or against candidates.</figcaption></figure>
 <figure><svg class="chart results" viewBox="0 0 720 236" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Election results">
 <style>.results text{font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;} .results .num{font-family:'IBM Plex Mono',ui-monospace,monospace;}</style>
@@ -1231,117 +1267,121 @@ ol.ranked{list-style:none;counter-reset:rk 4;padding:0;margin:26px 0}
 </section>
 <section class="block" id="federal-races"><h2>The California Federal Races</h2>
 <p>By March of 2026, 50 billionaire families had infused half a billion dollars into the midterm elections with the vast majority of those resources going towards Republican candidates and super PACs aligned with the president<sup class="fnref"><a id="fnref43" href="#fn43">43</a></sup>. Nationally, a constellation of largely tech-backed AI and crypto PACs are filtering money to both sides of the political aisle through related PACs in an effort to curry favor with Democratic and Republican candidates in safe seats while pouring in millions to defeat challengers to their agenda and defend or elect potential champions for their billionaire, pro tech agenda. They are engaging most heavily in pivotal seat with a clear eye on controlling Congress.</p>
-<figure><svg class="chart network" viewBox="0 0 760 964" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Congressional money flow network">
+<figure><svg class="chart network" viewBox="0 0 760 972" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Congressional money flow network">
 <style>.network text{font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;} .network .num{font-family:'IBM Plex Mono',ui-monospace,monospace;}</style>
 <text x="8" y="24" font-size="11" font-weight="700" letter-spacing="1.5" fill="#777777">BILLIONAIRE &amp; PAC MONEY</text>
 <text x="470" y="24" font-size="11" font-weight="700" letter-spacing="1.5" fill="#777777">CANDIDATES</text>
-<path d="M290,78.0 C380.0,78.0 380.0,260.0 470,260.0" fill="none" stroke="#BF0316" stroke-opacity="0.45" stroke-width="4.4"/>
-<text class="num" x="380" y="165" font-size="10" fill="#777777" text-anchor="middle">$958K</text>
-<path d="M290,130.0 C380.0,130.0 380.0,312.0 470,312.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="1.2"/>
-<text class="num" x="380" y="217" font-size="10" fill="#777777" text-anchor="middle">$7K</text>
-<path d="M290,182.0 C380.0,182.0 380.0,312.0 470,312.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="1.2"/>
-<text class="num" x="380" y="243" font-size="10" fill="#777777" text-anchor="middle">$4K</text>
-<path d="M290,234.0 C380.0,234.0 380.0,312.0 470,312.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="1.2"/>
-<text class="num" x="380" y="269" font-size="10" fill="#777777" text-anchor="middle">$3K</text>
-<path d="M290,286.0 C380.0,286.0 380.0,396.0 470,396.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="1.2"/>
-<text class="num" x="380" y="337" font-size="10" fill="#777777" text-anchor="middle">$7K</text>
-<path d="M290,338.0 C380.0,338.0 380.0,396.0 470,396.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="1.2"/>
-<text class="num" x="380" y="363" font-size="10" fill="#777777" text-anchor="middle">$4K</text>
-<path d="M290,390.0 C380.0,390.0 380.0,396.0 470,396.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="1.2"/>
-<text class="num" x="380" y="389" font-size="10" fill="#777777" text-anchor="middle">$4K</text>
-<path d="M290,442.0 C380.0,442.0 380.0,396.0 470,396.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="1.2"/>
-<text class="num" x="380" y="415" font-size="10" fill="#777777" text-anchor="middle">$4K</text>
-<path d="M290,494.0 C380.0,494.0 380.0,396.0 470,396.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="1.2"/>
-<text class="num" x="380" y="441" font-size="10" fill="#777777" text-anchor="middle">$10K</text>
-<path d="M290,546.0 C380.0,546.0 380.0,396.0 470,396.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="1.2"/>
-<text class="num" x="380" y="467" font-size="10" fill="#777777" text-anchor="middle">$5K</text>
-<path d="M290,598.0 C380.0,598.0 380.0,396.0 470,396.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="1.2"/>
-<text class="num" x="380" y="493" font-size="10" fill="#777777" text-anchor="middle">$2K</text>
-<path d="M290,650.0 C380.0,650.0 380.0,480.0 470,480.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="1.2"/>
-<text class="num" x="380" y="561" font-size="10" fill="#777777" text-anchor="middle">$7K</text>
-<path d="M290,702.0 C380.0,702.0 380.0,480.0 470,480.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="1.2"/>
-<text class="num" x="380" y="587" font-size="10" fill="#777777" text-anchor="middle">$7K</text>
-<path d="M290,754.0 C380.0,754.0 380.0,480.0 470,480.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="1.2"/>
-<text class="num" x="380" y="613" font-size="10" fill="#777777" text-anchor="middle">$4K</text>
-<path d="M290,806.0 C380.0,806.0 380.0,480.0 470,480.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="2.1"/>
-<text class="num" x="380" y="639" font-size="10" fill="#777777" text-anchor="middle">$260K</text>
-<path d="M290,858.0 C380.0,858.0 380.0,564.0 470,564.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="1.2"/>
-<text class="num" x="380" y="707" font-size="10" fill="#777777" text-anchor="middle">$4K</text>
-<path d="M290,910.0 C380.0,910.0 380.0,616.0 470,616.0" fill="none" stroke="#141618" stroke-opacity="0.45" stroke-width="2.2"/>
-<text class="num" x="380" y="759" font-size="10" fill="#777777" text-anchor="middle">$291K</text>
-<path d="M290,910.0 C380.0,910.0 380.0,668.0 470,668.0" fill="none" stroke="#BF0316" stroke-opacity="0.45" stroke-width="3.4"/>
-<text class="num" x="380" y="785" font-size="10" fill="#777777" text-anchor="middle">$653K</text>
-<rect x="8" y="58.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="18" y="83.0" font-size="12.5" font-weight="600" fill="#141618">Abundant Future</text>
-<rect x="8" y="110.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="18" y="135.0" font-size="12.5" font-weight="600" fill="#141618">Chris Larsen</text>
-<rect x="8" y="162.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="18" y="187.0" font-size="12.5" font-weight="600" fill="#141618">Garry Tan</text>
-<rect x="8" y="214.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="18" y="239.0" font-size="12.5" font-weight="600" fill="#141618">Sam Altman</text>
-<rect x="8" y="266.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="18" y="283.0" font-size="11.5" font-weight="600" fill="#141618">Nicole Luckey (wife of Anduril&#x27;s</text>
-<text x="18" y="297.0" font-size="11.5" font-weight="600" fill="#141618">Palmer Luckey)</text>
-<rect x="8" y="318.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="18" y="343.0" font-size="12.5" font-weight="600" fill="#141618">Laura Arnold</text>
-<rect x="8" y="370.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="18" y="395.0" font-size="12.5" font-weight="600" fill="#141618">Harlan Crow (Crow Holdings)</text>
-<rect x="8" y="422.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="18" y="447.0" font-size="12.5" font-weight="600" fill="#141618">Stephen Schwarzman (Blackstone)</text>
-<rect x="8" y="474.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="18" y="499.0" font-size="12.5" font-weight="600" fill="#141618">Space Exploration Tech Corp PAC</text>
-<rect x="8" y="526.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="18" y="551.0" font-size="12.5" font-weight="600" fill="#141618">Google Netpac</text>
-<rect x="8" y="578.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="18" y="603.0" font-size="12.5" font-weight="600" fill="#141618">Amazon PAC</text>
-<rect x="8" y="630.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="18" y="655.0" font-size="12.5" font-weight="600" fill="#141618">Ben Horowitz</text>
-<rect x="8" y="682.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="18" y="707.0" font-size="12.5" font-weight="600" fill="#141618">Marc Andreessen</text>
-<rect x="8" y="734.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="18" y="759.0" font-size="12.5" font-weight="600" fill="#141618">Alex Karp (Palantir)</text>
-<rect x="8" y="786.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="18" y="811.0" font-size="12.5" font-weight="600" fill="#141618">American Mission</text>
-<rect x="8" y="838.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="18" y="863.0" font-size="12.5" font-weight="600" fill="#141618">Palmer Luckey (Anduril)</text>
-<rect x="8" y="890.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"/>
-<text x="18" y="915.0" font-size="12.5" font-weight="600" fill="#141618">Serving CA</text>
-<text x="470" y="228.0" font-size="12" font-weight="700" letter-spacing="1" fill="#8F7500">CONGRESSIONAL DISTRICT 11</text>
-<text x="470" y="364.0" font-size="12" font-weight="700" letter-spacing="1" fill="#8F7500">CONGRESSIONAL DISTRICT 22</text>
-<text x="470" y="448.0" font-size="12" font-weight="700" letter-spacing="1" fill="#8F7500">CONGRESSIONAL DISTRICT 23</text>
-<text x="470" y="532.0" font-size="12" font-weight="700" letter-spacing="1" fill="#8F7500">CONGRESSIONAL DISTRICT 48</text>
-<rect x="470" y="240.0" width="282" height="40" rx="6" fill="#BF0316"/>
-<text x="480" y="265.0" font-size="13" font-weight="600" fill="#FFFFFF">Saikat Chakrabarti</text>
-<text class="num" x="744" y="265.0" font-size="11" fill="#FFFFFF" text-anchor="end">$958K</text>
-<rect x="470" y="292.0" width="282" height="40" rx="6" fill="#141618"/>
-<text x="480" y="317.0" font-size="13" font-weight="600" fill="#FFFFFF">Scott Weiner</text>
-<text class="num" x="744" y="317.0" font-size="11" fill="#FFFFFF" text-anchor="end">$14K</text>
-<rect x="470" y="376.0" width="282" height="40" rx="6" fill="#141618"/>
-<text x="480" y="401.0" font-size="13" font-weight="600" fill="#FFFFFF">David Valadao</text>
-<text class="num" x="744" y="401.0" font-size="11" fill="#FFFFFF" text-anchor="end">$35K</text>
-<rect x="470" y="460.0" width="282" height="40" rx="6" fill="#141618"/>
-<text x="480" y="485.0" font-size="13" font-weight="600" fill="#FFFFFF">Jay Obernolte</text>
-<text class="num" x="744" y="485.0" font-size="11" fill="#FFFFFF" text-anchor="end">$277K</text>
-<rect x="470" y="544.0" width="282" height="40" rx="6" fill="#141618"/>
-<text x="480" y="569.0" font-size="13" font-weight="600" fill="#FFFFFF">Jim Desmond</text>
-<text class="num" x="744" y="569.0" font-size="11" fill="#FFFFFF" text-anchor="end">$4K</text>
-<rect x="470" y="596.0" width="282" height="40" rx="6" fill="#141618"/>
-<text x="480" y="621.0" font-size="13" font-weight="600" fill="#FFFFFF">Ammar Campa-Najjar</text>
-<text class="num" x="744" y="621.0" font-size="11" fill="#FFFFFF" text-anchor="end">$291K</text>
-<rect x="470" y="648.0" width="282" height="40" rx="6" fill="#BF0316"/>
-<text x="480" y="673.0" font-size="13" font-weight="600" fill="#FFFFFF">Marni von Wilpert</text>
-<text class="num" x="744" y="673.0" font-size="11" fill="#FFFFFF" text-anchor="end">$653K</text>
-<line x1="8" y1="946" x2="38" y2="946" stroke="#141618" stroke-opacity="0.45" stroke-width="3"/>
-<text x="46" y="950" font-size="11" fill="#777777">Supporting</text>
-<line x1="138" y1="946" x2="168" y2="946" stroke="#BF0316" stroke-opacity="0.45" stroke-width="3"/>
-<text x="176" y="950" font-size="11" fill="#777777">Opposing</text>
+<path d="M290,72.0 C380.0,72.0 380.0,288.0 470,288.0" fill="none" stroke="#B9B4AA" stroke-width="5.2"/>
+<path d="M290,124.0 C380.0,124.0 380.0,340.0 470,340.0" fill="none" stroke="#B9B4AA" stroke-width="1.4"/>
+<path d="M290,176.0 C380.0,176.0 380.0,340.0 470,340.0" fill="none" stroke="#B9B4AA" stroke-width="1.4"/>
+<path d="M290,228.0 C380.0,228.0 380.0,340.0 470,340.0" fill="none" stroke="#B9B4AA" stroke-width="1.4"/>
+<path d="M290,280.0 C380.0,280.0 380.0,424.0 470,424.0" fill="none" stroke="#B9B4AA" stroke-width="1.4"/>
+<path d="M290,332.0 C380.0,332.0 380.0,424.0 470,424.0" fill="none" stroke="#B9B4AA" stroke-width="1.4"/>
+<path d="M290,384.0 C380.0,384.0 380.0,424.0 470,424.0" fill="none" stroke="#B9B4AA" stroke-width="1.4"/>
+<path d="M290,436.0 C380.0,436.0 380.0,424.0 470,424.0" fill="none" stroke="#B9B4AA" stroke-width="1.4"/>
+<path d="M290,488.0 C380.0,488.0 380.0,424.0 470,424.0" fill="none" stroke="#B9B4AA" stroke-width="1.4"/>
+<path d="M290,540.0 C380.0,540.0 380.0,424.0 470,424.0" fill="none" stroke="#B9B4AA" stroke-width="1.4"/>
+<path d="M290,592.0 C380.0,592.0 380.0,424.0 470,424.0" fill="none" stroke="#B9B4AA" stroke-width="1.4"/>
+<path d="M290,644.0 C380.0,644.0 380.0,508.0 470,508.0" fill="none" stroke="#B9B4AA" stroke-width="1.4"/>
+<path d="M290,696.0 C380.0,696.0 380.0,508.0 470,508.0" fill="none" stroke="#B9B4AA" stroke-width="1.4"/>
+<path d="M290,748.0 C380.0,748.0 380.0,508.0 470,508.0" fill="none" stroke="#B9B4AA" stroke-width="1.4"/>
+<path d="M290,800.0 C380.0,800.0 380.0,508.0 470,508.0" fill="none" stroke="#B9B4AA" stroke-width="2.4"/>
+<path d="M290,852.0 C380.0,852.0 380.0,592.0 470,592.0" fill="none" stroke="#B9B4AA" stroke-width="1.4"/>
+<path d="M290,904.0 C380.0,904.0 380.0,644.0 470,644.0" fill="none" stroke="#B9B4AA" stroke-width="2.6"/>
+<path d="M290,904.0 C380.0,904.0 380.0,696.0 470,696.0" fill="none" stroke="#B9B4AA" stroke-width="4.0"/>
+<text class="num" x="338" y="94" font-size="10.5" font-weight="500" text-anchor="middle" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" fill="#777777">$958K</text><text class="num" x="338" y="94" font-size="10.5" font-weight="500" text-anchor="middle" fill="#55524C">$958K</text>
+<text class="num" x="353" y="168" font-size="10.5" font-weight="500" text-anchor="middle" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" fill="#777777">$7K</text><text class="num" x="353" y="168" font-size="10.5" font-weight="500" text-anchor="middle" fill="#55524C">$7K</text>
+<text class="num" x="366" y="229" font-size="10.5" font-weight="500" text-anchor="middle" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" fill="#777777">$4K</text><text class="num" x="366" y="229" font-size="10.5" font-weight="500" text-anchor="middle" fill="#55524C">$4K</text>
+<text class="num" x="351" y="246" font-size="10.5" font-weight="500" text-anchor="middle" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" fill="#777777">$3K</text><text class="num" x="351" y="246" font-size="10.5" font-weight="500" text-anchor="middle" fill="#55524C">$3K</text>
+<text class="num" x="353" y="308" font-size="10.5" font-weight="500" text-anchor="middle" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" fill="#777777">$7K</text><text class="num" x="353" y="308" font-size="10.5" font-weight="500" text-anchor="middle" fill="#55524C">$7K</text>
+<text class="num" x="366" y="359" font-size="10.5" font-weight="500" text-anchor="middle" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" fill="#777777">$4K</text><text class="num" x="366" y="359" font-size="10.5" font-weight="500" text-anchor="middle" fill="#55524C">$4K</text>
+<text class="num" x="338" y="384" font-size="10.5" font-weight="500" text-anchor="middle" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" fill="#777777">$4K</text><text class="num" x="338" y="384" font-size="10.5" font-weight="500" text-anchor="middle" fill="#55524C">$4K</text>
+<text class="num" x="353" y="428" font-size="10.5" font-weight="500" text-anchor="middle" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" fill="#777777">$4K</text><text class="num" x="353" y="428" font-size="10.5" font-weight="500" text-anchor="middle" fill="#55524C">$4K</text>
+<text class="num" x="366" y="460" font-size="10.5" font-weight="500" text-anchor="middle" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" fill="#777777">$10K</text><text class="num" x="366" y="460" font-size="10.5" font-weight="500" text-anchor="middle" fill="#55524C">$10K</text>
+<text class="num" x="338" y="521" font-size="10.5" font-weight="500" text-anchor="middle" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" fill="#777777">$5K</text><text class="num" x="338" y="521" font-size="10.5" font-weight="500" text-anchor="middle" fill="#55524C">$5K</text>
+<text class="num" x="353" y="549" font-size="10.5" font-weight="500" text-anchor="middle" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" fill="#777777">$2K</text><text class="num" x="353" y="549" font-size="10.5" font-weight="500" text-anchor="middle" fill="#55524C">$2K</text>
+<text class="num" x="366" y="591" font-size="10.5" font-weight="500" text-anchor="middle" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" fill="#777777">$7K</text><text class="num" x="366" y="591" font-size="10.5" font-weight="500" text-anchor="middle" fill="#55524C">$7K</text>
+<text class="num" x="338" y="668" font-size="10.5" font-weight="500" text-anchor="middle" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" fill="#777777">$7K</text><text class="num" x="338" y="668" font-size="10.5" font-weight="500" text-anchor="middle" fill="#55524C">$7K</text>
+<text class="num" x="353" y="688" font-size="10.5" font-weight="500" text-anchor="middle" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" fill="#777777">$4K</text><text class="num" x="353" y="688" font-size="10.5" font-weight="500" text-anchor="middle" fill="#55524C">$4K</text>
+<text class="num" x="327" y="775" font-size="10.5" font-weight="500" text-anchor="middle" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" fill="#777777">$260K</text><text class="num" x="327" y="775" font-size="10.5" font-weight="500" text-anchor="middle" fill="#55524C">$260K</text>
+<text class="num" x="338" y="815" font-size="10.5" font-weight="500" text-anchor="middle" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" fill="#777777">$4K</text><text class="num" x="338" y="815" font-size="10.5" font-weight="500" text-anchor="middle" fill="#55524C">$4K</text>
+<text class="num" x="353" y="840" font-size="10.5" font-weight="500" text-anchor="middle" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" fill="#777777">$291K</text><text class="num" x="353" y="840" font-size="10.5" font-weight="500" text-anchor="middle" fill="#55524C">$291K</text>
+<text class="num" x="327" y="885" font-size="10.5" font-weight="500" text-anchor="middle" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" fill="#777777">$653K</text><text class="num" x="327" y="885" font-size="10.5" font-weight="500" text-anchor="middle" fill="#55524C">$653K</text>
+<rect x="8" y="52.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Abundant Future</title></rect>
+<text x="18" y="77.0" font-size="12.5" font-weight="600" fill="#141618">Abundant Future</text>
+<rect x="8" y="104.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Chris Larsen</title></rect>
+<text x="18" y="129.0" font-size="12.5" font-weight="600" fill="#141618">Chris Larsen</text>
+<rect x="8" y="156.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Garry Tan</title></rect>
+<text x="18" y="181.0" font-size="12.5" font-weight="600" fill="#141618">Garry Tan</text>
+<rect x="8" y="208.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Sam Altman</title></rect>
+<text x="18" y="233.0" font-size="12.5" font-weight="600" fill="#141618">Sam Altman</text>
+<rect x="8" y="260.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Nicole Luckey (wife of Anduril&#x27;s Palmer Luckey)</title></rect>
+<text x="18" y="277.0" font-size="11" font-weight="600" fill="#141618">Nicole Luckey (wife of Anduril&#x27;s</text>
+<text x="18" y="291.0" font-size="11" font-weight="600" fill="#141618">Palmer Luckey)</text>
+<rect x="8" y="312.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Laura Arnold</title></rect>
+<text x="18" y="337.0" font-size="12.5" font-weight="600" fill="#141618">Laura Arnold</text>
+<rect x="8" y="364.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Harlan Crow (Crow Holdings)</title></rect>
+<text x="18" y="389.0" font-size="12.5" font-weight="600" fill="#141618">Harlan Crow (Crow Holdings)</text>
+<rect x="8" y="416.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Stephen Schwarzman (Blackstone)</title></rect>
+<text x="18" y="441.0" font-size="12.5" font-weight="600" fill="#141618">Stephen Schwarzman (Blackstone)</text>
+<rect x="8" y="468.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Space Exploration Tech Corp PAC</title></rect>
+<text x="18" y="493.0" font-size="12.5" font-weight="600" fill="#141618">Space Exploration Tech Corp PAC</text>
+<rect x="8" y="520.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Google Netpac</title></rect>
+<text x="18" y="545.0" font-size="12.5" font-weight="600" fill="#141618">Google Netpac</text>
+<rect x="8" y="572.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Amazon PAC</title></rect>
+<text x="18" y="597.0" font-size="12.5" font-weight="600" fill="#141618">Amazon PAC</text>
+<rect x="8" y="624.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Ben Horowitz</title></rect>
+<text x="18" y="649.0" font-size="12.5" font-weight="600" fill="#141618">Ben Horowitz</text>
+<rect x="8" y="676.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Marc Andreessen</title></rect>
+<text x="18" y="701.0" font-size="12.5" font-weight="600" fill="#141618">Marc Andreessen</text>
+<rect x="8" y="728.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Alex Karp (Palantir)</title></rect>
+<text x="18" y="753.0" font-size="12.5" font-weight="600" fill="#141618">Alex Karp (Palantir)</text>
+<rect x="8" y="780.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>American Mission</title></rect>
+<text x="18" y="805.0" font-size="12.5" font-weight="600" fill="#141618">American Mission</text>
+<rect x="8" y="832.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Palmer Luckey (Anduril)</title></rect>
+<text x="18" y="857.0" font-size="12.5" font-weight="600" fill="#141618">Palmer Luckey (Anduril)</text>
+<rect x="8" y="884.0" width="282" height="40" rx="6" fill="#FDF6D8" stroke="#F2C900" stroke-width="1.5"><title>Serving CA</title></rect>
+<text x="18" y="909.0" font-size="12.5" font-weight="600" fill="#141618">Serving CA</text>
+<text x="470" y="256.0" font-size="12" font-weight="700" letter-spacing="1" fill="#8F7500">CONGRESSIONAL DISTRICT 11</text>
+<text x="470" y="392.0" font-size="12" font-weight="700" letter-spacing="1" fill="#8F7500">CONGRESSIONAL DISTRICT 22</text>
+<text x="470" y="476.0" font-size="12" font-weight="700" letter-spacing="1" fill="#8F7500">CONGRESSIONAL DISTRICT 23</text>
+<text x="470" y="560.0" font-size="12" font-weight="700" letter-spacing="1" fill="#8F7500">CONGRESSIONAL DISTRICT 48</text>
+<rect x="470" y="268.0" width="282" height="40" rx="6" fill="#1E5FA8"><title>Oppose Saikat Chakrabarti &#8212; $958K</title></rect>
+<rect x="478" y="273.0" width="66" height="17" rx="8.5" fill="#FFFFFF"/><text x="511.0" y="285.5" font-size="9.5" font-weight="700" letter-spacing="1" fill="#BF0316" text-anchor="middle">OPPOSE</text>
+<text x="480" y="302.0" font-size="12.5" font-weight="600" fill="#FFFFFF">Saikat Chakrabarti</text>
+<text class="num" x="744" y="285.0" font-size="11" fill="#FFFFFF" text-anchor="end">$958K</text>
+<rect x="470" y="320.0" width="282" height="40" rx="6" fill="#1E5FA8"><title>Support Scott Wiener &#8212; $14K</title></rect>
+<rect x="478" y="325.0" width="74" height="17" rx="8.5" fill="#FFFFFF"/><text x="515.0" y="337.5" font-size="9.5" font-weight="700" letter-spacing="1" fill="#141618" text-anchor="middle">SUPPORT</text>
+<text x="480" y="354.0" font-size="12.5" font-weight="600" fill="#FFFFFF">Scott Wiener</text>
+<text class="num" x="744" y="337.0" font-size="11" fill="#FFFFFF" text-anchor="end">$14K</text>
+<rect x="470" y="404.0" width="282" height="40" rx="6" fill="#BF0316"><title>Support David Valadao &#8212; $35K</title></rect>
+<rect x="478" y="409.0" width="74" height="17" rx="8.5" fill="#FFFFFF"/><text x="515.0" y="421.5" font-size="9.5" font-weight="700" letter-spacing="1" fill="#141618" text-anchor="middle">SUPPORT</text>
+<text x="480" y="438.0" font-size="12.5" font-weight="600" fill="#FFFFFF">David Valadao</text>
+<text class="num" x="744" y="421.0" font-size="11" fill="#FFFFFF" text-anchor="end">$35K</text>
+<rect x="470" y="488.0" width="282" height="40" rx="6" fill="#BF0316"><title>Support Jay Obernolte &#8212; $277K</title></rect>
+<rect x="478" y="493.0" width="74" height="17" rx="8.5" fill="#FFFFFF"/><text x="515.0" y="505.5" font-size="9.5" font-weight="700" letter-spacing="1" fill="#141618" text-anchor="middle">SUPPORT</text>
+<text x="480" y="522.0" font-size="12.5" font-weight="600" fill="#FFFFFF">Jay Obernolte</text>
+<text class="num" x="744" y="505.0" font-size="11" fill="#FFFFFF" text-anchor="end">$277K</text>
+<rect x="470" y="572.0" width="282" height="40" rx="6" fill="#BF0316"><title>Support Jim Desmond &#8212; $4K</title></rect>
+<rect x="478" y="577.0" width="74" height="17" rx="8.5" fill="#FFFFFF"/><text x="515.0" y="589.5" font-size="9.5" font-weight="700" letter-spacing="1" fill="#141618" text-anchor="middle">SUPPORT</text>
+<text x="480" y="606.0" font-size="12.5" font-weight="600" fill="#FFFFFF">Jim Desmond</text>
+<text class="num" x="744" y="589.0" font-size="11" fill="#FFFFFF" text-anchor="end">$4K</text>
+<rect x="470" y="624.0" width="282" height="40" rx="6" fill="#1E5FA8"><title>Support Ammar Campa-Najjar &#8212; $291K</title></rect>
+<rect x="478" y="629.0" width="74" height="17" rx="8.5" fill="#FFFFFF"/><text x="515.0" y="641.5" font-size="9.5" font-weight="700" letter-spacing="1" fill="#141618" text-anchor="middle">SUPPORT</text>
+<text x="480" y="658.0" font-size="12.5" font-weight="600" fill="#FFFFFF">Ammar Campa-Najjar</text>
+<text class="num" x="744" y="641.0" font-size="11" fill="#FFFFFF" text-anchor="end">$291K</text>
+<rect x="470" y="676.0" width="282" height="40" rx="6" fill="#1E5FA8"><title>Oppose Marni von Wilpert &#8212; $653K</title></rect>
+<rect x="478" y="681.0" width="66" height="17" rx="8.5" fill="#FFFFFF"/><text x="511.0" y="693.5" font-size="9.5" font-weight="700" letter-spacing="1" fill="#BF0316" text-anchor="middle">OPPOSE</text>
+<text x="480" y="710.0" font-size="12.5" font-weight="600" fill="#FFFFFF">Marni von Wilpert</text>
+<text class="num" x="744" y="693.0" font-size="11" fill="#FFFFFF" text-anchor="end">$653K</text>
+<rect x="8" y="949" width="14" height="14" rx="3" fill="#1E5FA8"/><text x="28" y="960" font-size="11.5" fill="#777777">Democrat</text><rect x="108" y="949" width="14" height="14" rx="3" fill="#BF0316"/><text x="128" y="960" font-size="11.5" fill="#777777">Republican</text><text x="226" y="960" font-size="11.5" fill="#777777">SUPPORT / OPPOSE tags show where the money aimed. Line weight scales with dollars.</text>
 </svg><figcaption>Billionaire and PAC money in the four California Congressional races, by candidate. Line weight scales with the size of the contribution; dark lines support, red lines oppose.</figcaption></figure>
 <h3 id="cd11">Congressional District 11</h3>
 <p>San Francisco County</p>
 <p>Independent expenditures <strong>opposing</strong> Saikat Chakrabarti<br>Abundant Future: <span class="m">$957,881</span><br>Donors to Scott Wiener:<br>Chris Larsen: <span class="m">$7,000</span><br>Garry Tan: <span class="m">$3,500</span><br>Sam Altman: <span class="m">$3,300</span> — note: only D donation this cycle</p>
 <figure><svg class="chart results" viewBox="0 0 720 184" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Election results">
 <style>.results text{font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;} .results .num{font-family:'IBM Plex Mono',ui-monospace,monospace;}</style>
-<text x="0" y="38" font-size="15" font-weight="600" fill="#141618">Scott Weiner</text>
+<text x="0" y="38" font-size="15" font-weight="600" fill="#141618">Scott Wiener</text>
 <text x="0" y="54" font-size="11" fill="#777777">Democrat  ✓ advancing</text>
 <rect x="210" y="22" width="360" height="24" rx="4" fill="#E9E7E2"/>
 <rect x="210" y="22" width="360.0" height="24" rx="4" fill="#1E5FA8"/>
@@ -1442,14 +1482,14 @@ ol.ranked{list-style:none;counter-reset:rk 4;padding:0;margin:26px 0}
 <p>The total contribution figures in our billionaire chart reflect three combined categories: all political contributions to candidates or PACs within California; all federal-level giving, including contributions made outside California; and all contributions made in the San Francisco June 2 primary.</p>
 <p>We made a few deliberate choices in narrowing the list to the top 15 billionaires guided by our interest in the wealthiest and most politically <em>active</em> billionaires in California — specifically, those who gave to a broad range of races and ballot measure not just giving to their own campaigns or those of family members. We therefore excluded Tom Steyer: his contributions were concentrated on self-funding his own campaign, and he did not advance to the November general election, despite having sought the state's highest office.</p>
 <h3 id="meth-corps">Affiliated Corporations</h3>
-<p>Beyond individual donors, we also examined the political footprint of major corporations affiliated with the<br>billionaires on our list, across state and federal candidate races and ballot measures in California. We define an affiliated corporation as one where the billionaire serves as CEO, Chairperson, or a key C-suite executive; is a Founder; or is a former executive who continues to work inside the company — Sergey Brin, who remains involved at Google, is one example.</p>
+<p>Beyond individual donors, we also examined the political footprint of major corporations affiliated with the billionaires on our list, across state and federal candidate races and ballot measures in California. We define an affiliated corporation as one where the billionaire serves as CEO, Chairperson, or a key C-suite executive; is a Founder; or is a former executive who continues to work inside the company — Sergey Brin, who remains involved at Google, is one example.</p>
 <p>We also chose to highlight major California companies that made significant political contributions this cycle even though their executives did not individually make significant contributions of their own. We did not include corporations that made significant contributions nationally but not in California; our focus remained on political spending within the state.</p>
 <p>Similar to billionaire totals, the total contribution figures for these corporations include all political contributions to candidates or PACs within California, all federal-level giving including contributions made outside California, and all contributions made in the San Francisco June 2 primary.</p>
 <h3 id="meth-pacs">Billionaire- and Corporate-Backed PACs</h3>
 <p>Finally, we identified and analyzed contributions to and from what we call billionaire- and corporate-backed PACs in California – defined in this way if it met one of the following criteria: it received significant contributions from the top billionaires identified in our research; it was founded by one of those billionaires or an affiliated corporation; or it is a PAC wielding significant contributions and spending that is backed by, or was started by, a major corporation or business/industry association in the state.</p>
 <p>At the federal level, we had a more narrow threshold, PACs that received contributions in the millions of dollars from the billionaires identified in our research, or that were founded by those billionaires or their affiliated corporations.</p>
 <p>For both California and federal PACs, the total-raised figures we reflect all money raised by the PAC — not solely contributions from the California billionaire donors or their affiliated corporations. In most cases, however, we separately highlight the specific dollar amount contributed by those billionaires and their affiliated corporations within the broader PAC total.</p>
-<p><strong><em>Specifics on data sources:</em></strong> All state level contribution data is from the California Secretary of State Campaign Finance Power Search, https://powersearch.sos.ca.gov/<br>advanced.php as of July 6, 2026.<br>Federal level contribution data is from the Federal Election Commission Individual Contribution Search https://www.fec.gov/data/receipts/individual-contributions/?two_year_transaction_period=2026&amp;min_date=01%2F01%2F2025&amp;max_date=12%2F31%2F2026.</p>
+<p><strong><em>Specifics on data sources:</em></strong> All state level contribution data is from the <a href="https://powersearch.sos.ca.gov/advanced.php" target="_blank" rel="noopener">California Secretary of State Campaign Finance Power Search</a> as of July 6, 2026.<br>Federal level contribution data is from the <a href="https://www.fec.gov/data/receipts/individual-contributions/?two_year_transaction_period=2026&amp;min_date=01%2F01%2F2025&amp;max_date=12%2F31%2F2026" target="_blank" rel="noopener">Federal Election Commission Individual Contribution Search</a>.</p>
 </section>
 <section class="block" id="appendix-1"><h2>Appendix 1 — The Ballot Measures</h2>
 <h3 id="local-tax">Restricting Local Tax Measures</h3>
@@ -1491,7 +1531,7 @@ ol.ranked{list-style:none;counter-reset:rk 4;padding:0;margin:26px 0}
 <h4 id="mahan">Supporting Matt Mahan</h4>
 <p>Matt Mahan is a relative newcomer to politics. He was elected to the San Jose City Council in 2020 and mayor in 2022.<sup class="fnref"><a id="fnref49" href="#fn49">49</a></sup></p>
 <p>Mahan is a centrist Democrat who has been a critic of Governor Gavin Newsom and has been at odds with other members of the party. For instance, Mahan was a vocal supporter of Proposition 36, which was backed by police, prosecutors, and Republicans to increase penalties for some drug and theft offenses and require some defendants to enter treatment programs.<sup class="fnref"><a id="fnref50" href="#fn50">50</a></sup> Mahan had also spoken out against the proposed billionaire tax.<sup class="fnref"><a id="fnref51" href="#fn51">51</a></sup></p>
-<p>Th<strong>e California Back to Basics PAC</strong> raised <span class="m">$27 million</span> to support Mahan. At least two dozen billionaires were major donors to the PAC.</p>
+<p><strong>The California Back to Basics PAC</strong> raised <span class="m">$27 million</span> to support Mahan. At least two dozen billionaires were major donors to the PAC.</p>
 <h4 id="back-to-basics">California Back to Basics — Supporting Matt Mahan</h4>
 <div class="tablewrap"><table>
 <thead><tr><th>NAME</th><th>CORPORATE AFFILIATION</th><th>CONTRIBUTION AMOUNT</th></tr></thead><tbody>
@@ -1531,8 +1571,8 @@ ol.ranked{list-style:none;counter-reset:rk 4;padding:0;margin:26px 0}
 <tr><td>Nicholas Pritzker</td><td>Tao Capital</td><td><span class="m">$100,000</span></td></tr>
 </tbody></table></div>
 <p><strong>At least 30 billionaires contributed the maximum of <span class="m">$78,400</span> to Mahan’s campaign.</strong></p>
-<div class="tablewrap"><table>
-<thead><tr><th>David Baszucki</th><th>Dylan Field</th><th>William Oberndorf</th></tr></thead><tbody>
+<div class="tablewrap"><table class="noheader"><tbody>
+<tr><td>David Baszucki</td><td>Dylan Field</td><td>William Oberndorf</td></tr>
 <tr><td>Jan Baszucki</td><td>John Hering</td><td>Mark Pincus</td></tr>
 <tr><td>Diego Berdakin</td><td>Maksim Rafael Levchin</td><td>Signe Ostby</td></tr>
 <tr><td>Sergy Brin</td><td>Jeremy Liew</td><td>Jamie Simonoff</td></tr>
